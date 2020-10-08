@@ -1,0 +1,31 @@
+name: ReLovedGoddies
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.9.3 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+#Async:
+  async_redux: ^4.0.2
+  provider_for_redux: ^1.1.3
+
+#Firebase:
+  firebase_core: ^0.5.0+1
+  firebase_auth: ^0.18.1+2
+  cloud_firestore: ^0.14.1+3
+  cloud_functions: ^0.6.0+1
+
+#Other:
+  cupertino_icons: ^0.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
