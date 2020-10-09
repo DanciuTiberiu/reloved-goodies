@@ -4,7 +4,7 @@ import 'dart:js' as js;
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Translation {
-  Map<dynamic, dynamic> _localizedValues;
+  Map<String, dynamic> _localizedValues;
   String localLanguage = window.localStorage[''];
 
   Map<dynamic, dynamic> get getValues => _localizedValues;
@@ -53,9 +53,9 @@ class Translation {
 
   Future<Null> init({String language = 'ro'}) async {
     if (language != null){
-        var defaultSnap =
+        DocumentSnapshot defaultSnap =
         await Firestore.instance.collection('translation_video_web').document(language).get();
-        _localizedValues = defaultSnap.data;
+        _localizedValues = defaultSnap.data();
         js.JsObject jsWindow = js.JsObject.fromBrowserObject(document);
         jsWindow['language'] = language;
     }
