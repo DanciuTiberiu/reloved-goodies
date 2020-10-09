@@ -33,6 +33,12 @@ class Translation {
         : _localizedValues[key]['$item'][index].replaceAll('\\n', '\n');
   }
 
+  String textFromMapInsideMap(String key1, String key2, String item,) {
+    return (_localizedValues == null || _localizedValues[key1][key2]['$item'] == null)
+        ? '** $key1[$key2] not found'
+        : _localizedValues[key1][key2]['$item'].replaceAll('\\n', '\n');
+  }
+
   String textFromValue(dynamic element, String language) {
     if (element != null) {
       if (element is Map) {
@@ -54,7 +60,7 @@ class Translation {
   Future<Null> init({String language = 'ro'}) async {
     if (language != null){
         DocumentSnapshot defaultSnap =
-        await Firestore.instance.collection('translation_video_web').document(language).get();
+        await FirebaseFirestore.instance.collection('translation_video_web').doc(language).get();
         _localizedValues = defaultSnap.data();
         js.JsObject jsWindow = js.JsObject.fromBrowserObject(document);
         jsWindow['language'] = language;

@@ -1,7 +1,7 @@
-import 'package:ReLovedGoddies/redux/appstate.dart';
 import 'package:async_redux/async_redux.dart';
 import 'package:flutter/material.dart';
 import 'package:provider_for_redux/provider_for_redux.dart';
+import 'redux/appstate.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();
 
