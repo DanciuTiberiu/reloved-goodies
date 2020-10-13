@@ -152,7 +152,7 @@ class Tools {
     this.cases =
         translation.textFromMapInsideMap('categories', 'tools', 'cases');
     this.selfTranslation =
-        translation.textFromMapInsideMap('categories', 'tools', 'lips');
+        translation.textFromMapInsideMap('categories', 'tools', 'tools');
   }
 }
 
