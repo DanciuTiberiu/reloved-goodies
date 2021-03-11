@@ -60,7 +60,7 @@ class Translation {
   Future<Null> init({String language = 'ro'}) async {
     if (language != null){
         DocumentSnapshot defaultSnap =
-        await FirebaseFirestore.instance.collection('translation_video_web').doc(language).get();
+        await FirebaseFirestore.instance.collection('translation').doc(language).get();
         _localizedValues = defaultSnap.data();
         js.JsObject jsWindow = js.JsObject.fromBrowserObject(document);
         jsWindow['language'] = language;

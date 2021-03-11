@@ -1,6 +1,12 @@
 import 'translation.dart';
 
-class Categories {
+abstract class CategoryElement {
+  CategoryElement();
+
+  List<dynamic> getCategoryElements();
+}
+
+class Categories implements CategoryElement {
   Face face;
   Eyes eyes;
   Lips lips;
@@ -14,9 +20,13 @@ class Categories {
     this.tools = Tools();
     this.skincare = Skincare();
   }
+
+  List<dynamic> getCategoryElements() {
+    return [this.face, this.eyes, this.lips, this.tools, this.skincare];
+  }
 }
 
-class Face {
+class Face implements CategoryElement{
   String primer;
   String foundation;
   String concealer;
@@ -58,9 +68,25 @@ class Face {
     this.selfTranslation =
         translation.textFromMapInsideMap('categories', 'face', 'face');
   }
+
+  List<dynamic> getCategoryElements() {
+    return [
+      this.primer,
+      this.BBcream,
+      this.foundation,
+      this.concealer,
+      this.powder,
+      this.blush,
+      this.contour,
+      this.bronzer,
+      this.highlighter,
+      this.settingSpray,
+      this.palettes,
+    ];
+  }
 }
 
-class Eyes {
+class Eyes implements CategoryElement {
   String eyeliner;
   String mascara;
   String glitter;
@@ -91,13 +117,28 @@ class Eyes {
     this.selfTranslation =
         translation.textFromMapInsideMap('categories', 'eyes', 'eyes');
   }
+
+  @override
+  List getCategoryElements() {
+    return [
+      this.primer,
+      this.eyeshadow,
+      this.eyeliner,
+      this.mascara,
+      this.glitter,
+      this.falseLashes,
+      this.eyebrow,
+      this.palettes,
+
+    ];
+  }
 }
 
-class Lips {
+class Lips implements CategoryElement{
+  String primer;
+  String liner;
   String gloss;
   String lipstick;
-  String liner;
-  String primer;
   String liquidLipstick;
   String glitter;
   String palettes;
@@ -121,9 +162,22 @@ class Lips {
     this.selfTranslation =
         translation.textFromMapInsideMap('categories', 'lips', 'lips');
   }
+
+  @override
+  List getCategoryElements() {
+    return [
+      this.gloss,
+      this.lipstick,
+      this.liner,
+      this.primer,
+      this.liquidLipstick,
+      this.glitter,
+      this.palettes,
+    ];
+  }
 }
 
-class Tools {
+class Tools implements CategoryElement{
   String faceBrushes;
   String eyesBrushes;
   String lipsBrushes;
@@ -141,8 +195,8 @@ class Tools {
         translation.textFromMapInsideMap('categories', 'tools', 'eyesBrushes');
     this.lipsBrushes =
         translation.textFromMapInsideMap('categories', 'tools', 'lipsBrushes');
-    this.eyebrowBrushes =
-        translation.textFromMapInsideMap('categories', 'tools', 'eyebrowBrushes');
+    this.eyebrowBrushes = translation.textFromMapInsideMap(
+        'categories', 'tools', 'eyebrowBrushes');
     this.sponges =
         translation.textFromMapInsideMap('categories', 'tools', 'sponges');
     this.accessories =
@@ -154,6 +208,32 @@ class Tools {
     this.selfTranslation =
         translation.textFromMapInsideMap('categories', 'tools', 'tools');
   }
+
+  @override
+  List getCategoryElements() {
+    return [
+      this.faceBrushes,
+      this.eyesBrushes,
+      this.lipsBrushes,
+      this.eyebrowBrushes,
+      this.sponges,
+      this.accessories,
+      this.brushSet,
+      this.cases,
+    ];
+  }
 }
 
-class Skincare {}
+class Skincare implements CategoryElement{
+  String selfTranslation;
+
+  Skincare() {
+    this.selfTranslation =
+        translation.textFromMapInsideMap('categories', 'skincare', 'skincare');
+  }
+
+  @override
+  List getCategoryElements() {
+   return [];
+  }
+}
