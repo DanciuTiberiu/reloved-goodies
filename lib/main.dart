@@ -29,7 +29,7 @@ class ReLovedGoodies extends StatelessWidget {
   final Store<AppState> store;
   final navigatorKey;
 
-  ReLovedGoodies({Key key, this.store, this.navigatorKey}) : super(key: key);
+  ReLovedGoodies({required this.store, this.navigatorKey});
 
   // This widget is the root of your application.
   @override
