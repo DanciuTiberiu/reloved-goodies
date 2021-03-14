@@ -9,12 +9,12 @@ part of 'delivery_model.dart';
 _$_InitialDeliveryModel _$_$_InitialDeliveryModelFromJson(
     Map<String, dynamic> json) {
   return _$_InitialDeliveryModel(
-    personalService: json['personalService'] as bool ?? true,
-    postalService: json['postalService'] as bool ?? true,
-    courierService: json['courierService'] as bool ?? true,
-    cityPeS: json['cityPeS'] as String ?? '',
-    pricePoS: json['pricePoS'] as String ?? '',
-    priceCS: json['priceCS'] as String ?? '',
+    personalService: json['personalService'] as bool? ?? true,
+    postalService: json['postalService'] as bool? ?? true,
+    courierService: json['courierService'] as bool? ?? true,
+    cityPeS: json['cityPeS'] as String? ?? '',
+    pricePoS: json['pricePoS'] as String? ?? '',
+    priceCS: json['priceCS'] as String? ?? '',
   );
 }
 

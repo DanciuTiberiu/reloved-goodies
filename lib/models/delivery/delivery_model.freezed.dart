@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'delivery_model.dart';
 
@@ -8,6 +8,10 @@ part of 'delivery_model.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 DeliveryModel _$DeliveryModelFromJson(Map<String, dynamic> json) {
   return _InitialDeliveryModel.fromJson(json);
 }
@@ -16,14 +20,13 @@ DeliveryModel _$DeliveryModelFromJson(Map<String, dynamic> json) {
 class _$DeliveryModelTearOff {
   const _$DeliveryModelTearOff();
 
-// ignore: unused_element
   _InitialDeliveryModel initial(
-      {bool personalService = true,
-      bool postalService = true,
-      bool courierService = true,
-      String cityPeS = '',
-      String pricePoS = '',
-      String priceCS = ''}) {
+      {bool? personalService = true,
+      bool? postalService = true,
+      bool? courierService = true,
+      String? cityPeS = '',
+      String? pricePoS = '',
+      String? priceCS = ''}) {
     return _InitialDeliveryModel(
       personalService: personalService,
       postalService: postalService,
@@ -34,53 +37,63 @@ class _$DeliveryModelTearOff {
     );
   }
 
-// ignore: unused_element
   DeliveryModel fromJson(Map<String, Object> json) {
     return DeliveryModel.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $DeliveryModel = _$DeliveryModelTearOff();
 
 /// @nodoc
 mixin _$DeliveryModel {
-  bool get personalService;
-  bool get postalService;
-  bool get courierService;
-  String get cityPeS;
-  String get pricePoS;
-  String get priceCS;
+  bool? get personalService => throw _privateConstructorUsedError;
+  bool? get postalService => throw _privateConstructorUsedError;
+  bool? get courierService => throw _privateConstructorUsedError;
+  String? get cityPeS => throw _privateConstructorUsedError;
+  String? get pricePoS => throw _privateConstructorUsedError;
+  String? get priceCS => throw _privateConstructorUsedError;
 
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required
-        Result initial(
-            bool personalService,
-            bool postalService,
-            bool courierService,
-            String cityPeS,
-            String pricePoS,
-            String priceCS),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            bool? personalService,
+            bool? postalService,
+            bool? courierService,
+            String? cityPeS,
+            String? pricePoS,
+            String? priceCS)
+        initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(bool personalService, bool postalService,
-        bool courierService, String cityPeS, String pricePoS, String priceCS),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            bool? personalService,
+            bool? postalService,
+            bool? courierService,
+            String? cityPeS,
+            String? pricePoS,
+            String? priceCS)?
+        initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialDeliveryModel value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialDeliveryModel value) initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialDeliveryModel value),
-    @required Result orElse(),
-  });
-  Map<String, dynamic> toJson();
-  $DeliveryModelCopyWith<DeliveryModel> get copyWith;
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialDeliveryModel value)? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $DeliveryModelCopyWith<DeliveryModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -89,12 +102,12 @@ abstract class $DeliveryModelCopyWith<$Res> {
           DeliveryModel value, $Res Function(DeliveryModel) then) =
       _$DeliveryModelCopyWithImpl<$Res>;
   $Res call(
-      {bool personalService,
-      bool postalService,
-      bool courierService,
-      String cityPeS,
-      String pricePoS,
-      String priceCS});
+      {bool? personalService,
+      bool? postalService,
+      bool? courierService,
+      String? cityPeS,
+      String? pricePoS,
+      String? priceCS});
 }
 
 /// @nodoc
@@ -108,26 +121,38 @@ class _$DeliveryModelCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object personalService = freezed,
-    Object postalService = freezed,
-    Object courierService = freezed,
-    Object cityPeS = freezed,
-    Object pricePoS = freezed,
-    Object priceCS = freezed,
+    Object? personalService = freezed,
+    Object? postalService = freezed,
+    Object? courierService = freezed,
+    Object? cityPeS = freezed,
+    Object? pricePoS = freezed,
+    Object? priceCS = freezed,
   }) {
     return _then(_value.copyWith(
       personalService: personalService == freezed
           ? _value.personalService
-          : personalService as bool,
+          : personalService // ignore: cast_nullable_to_non_nullable
+              as bool?,
       postalService: postalService == freezed
           ? _value.postalService
-          : postalService as bool,
+          : postalService // ignore: cast_nullable_to_non_nullable
+              as bool?,
       courierService: courierService == freezed
           ? _value.courierService
-          : courierService as bool,
-      cityPeS: cityPeS == freezed ? _value.cityPeS : cityPeS as String,
-      pricePoS: pricePoS == freezed ? _value.pricePoS : pricePoS as String,
-      priceCS: priceCS == freezed ? _value.priceCS : priceCS as String,
+          : courierService // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      cityPeS: cityPeS == freezed
+          ? _value.cityPeS
+          : cityPeS // ignore: cast_nullable_to_non_nullable
+              as String?,
+      pricePoS: pricePoS == freezed
+          ? _value.pricePoS
+          : pricePoS // ignore: cast_nullable_to_non_nullable
+              as String?,
+      priceCS: priceCS == freezed
+          ? _value.priceCS
+          : priceCS // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -140,12 +165,12 @@ abstract class _$InitialDeliveryModelCopyWith<$Res>
       __$InitialDeliveryModelCopyWithImpl<$Res>;
   @override
   $Res call(
-      {bool personalService,
-      bool postalService,
-      bool courierService,
-      String cityPeS,
-      String pricePoS,
-      String priceCS});
+      {bool? personalService,
+      bool? postalService,
+      bool? courierService,
+      String? cityPeS,
+      String? pricePoS,
+      String? priceCS});
 }
 
 /// @nodoc
@@ -161,26 +186,38 @@ class __$InitialDeliveryModelCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object personalService = freezed,
-    Object postalService = freezed,
-    Object courierService = freezed,
-    Object cityPeS = freezed,
-    Object pricePoS = freezed,
-    Object priceCS = freezed,
+    Object? personalService = freezed,
+    Object? postalService = freezed,
+    Object? courierService = freezed,
+    Object? cityPeS = freezed,
+    Object? pricePoS = freezed,
+    Object? priceCS = freezed,
   }) {
     return _then(_InitialDeliveryModel(
       personalService: personalService == freezed
           ? _value.personalService
-          : personalService as bool,
+          : personalService // ignore: cast_nullable_to_non_nullable
+              as bool?,
       postalService: postalService == freezed
           ? _value.postalService
-          : postalService as bool,
+          : postalService // ignore: cast_nullable_to_non_nullable
+              as bool?,
       courierService: courierService == freezed
           ? _value.courierService
-          : courierService as bool,
-      cityPeS: cityPeS == freezed ? _value.cityPeS : cityPeS as String,
-      pricePoS: pricePoS == freezed ? _value.pricePoS : pricePoS as String,
-      priceCS: priceCS == freezed ? _value.priceCS : priceCS as String,
+          : courierService // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      cityPeS: cityPeS == freezed
+          ? _value.cityPeS
+          : cityPeS // ignore: cast_nullable_to_non_nullable
+              as String?,
+      pricePoS: pricePoS == freezed
+          ? _value.pricePoS
+          : pricePoS // ignore: cast_nullable_to_non_nullable
+              as String?,
+      priceCS: priceCS == freezed
+          ? _value.priceCS
+          : priceCS // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -188,43 +225,36 @@ class __$InitialDeliveryModelCopyWithImpl<$Res>
 @JsonSerializable()
 
 /// @nodoc
-class _$_InitialDeliveryModel extends _InitialDeliveryModel {
+class _$_InitialDeliveryModel implements _InitialDeliveryModel {
   _$_InitialDeliveryModel(
       {this.personalService = true,
       this.postalService = true,
       this.courierService = true,
       this.cityPeS = '',
       this.pricePoS = '',
-      this.priceCS = ''})
-      : assert(personalService != null),
-        assert(postalService != null),
-        assert(courierService != null),
-        assert(cityPeS != null),
-        assert(pricePoS != null),
-        assert(priceCS != null),
-        super._();
+      this.priceCS = ''});
 
   factory _$_InitialDeliveryModel.fromJson(Map<String, dynamic> json) =>
       _$_$_InitialDeliveryModelFromJson(json);
 
   @JsonKey(defaultValue: true)
   @override
-  final bool personalService;
+  final bool? personalService;
   @JsonKey(defaultValue: true)
   @override
-  final bool postalService;
+  final bool? postalService;
   @JsonKey(defaultValue: true)
   @override
-  final bool courierService;
+  final bool? courierService;
   @JsonKey(defaultValue: '')
   @override
-  final String cityPeS;
+  final String? cityPeS;
   @JsonKey(defaultValue: '')
   @override
-  final String pricePoS;
+  final String? pricePoS;
   @JsonKey(defaultValue: '')
   @override
-  final String priceCS;
+  final String? priceCS;
 
   @override
   String toString() {
@@ -264,6 +294,7 @@ class _$_InitialDeliveryModel extends _InitialDeliveryModel {
       const DeepCollectionEquality().hash(pricePoS) ^
       const DeepCollectionEquality().hash(priceCS);
 
+  @JsonKey(ignore: true)
   @override
   _$InitialDeliveryModelCopyWith<_InitialDeliveryModel> get copyWith =>
       __$InitialDeliveryModelCopyWithImpl<_InitialDeliveryModel>(
@@ -271,29 +302,33 @@ class _$_InitialDeliveryModel extends _InitialDeliveryModel {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required
-        Result initial(
-            bool personalService,
-            bool postalService,
-            bool courierService,
-            String cityPeS,
-            String pricePoS,
-            String priceCS),
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            bool? personalService,
+            bool? postalService,
+            bool? courierService,
+            String? cityPeS,
+            String? pricePoS,
+            String? priceCS)
+        initial,
   }) {
-    assert(initial != null);
     return initial(personalService, postalService, courierService, cityPeS,
         pricePoS, priceCS);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(bool personalService, bool postalService,
-        bool courierService, String cityPeS, String pricePoS, String priceCS),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            bool? personalService,
+            bool? postalService,
+            bool? courierService,
+            String? cityPeS,
+            String? pricePoS,
+            String? priceCS)?
+        initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(personalService, postalService, courierService, cityPeS,
           pricePoS, priceCS);
@@ -303,20 +338,18 @@ class _$_InitialDeliveryModel extends _InitialDeliveryModel {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialDeliveryModel value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialDeliveryModel value) initial,
   }) {
-    assert(initial != null);
     return initial(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialDeliveryModel value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialDeliveryModel value)? initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(this);
     }
@@ -329,31 +362,32 @@ class _$_InitialDeliveryModel extends _InitialDeliveryModel {
   }
 }
 
-abstract class _InitialDeliveryModel extends DeliveryModel {
-  _InitialDeliveryModel._() : super._();
+abstract class _InitialDeliveryModel implements DeliveryModel {
   factory _InitialDeliveryModel(
-      {bool personalService,
-      bool postalService,
-      bool courierService,
-      String cityPeS,
-      String pricePoS,
-      String priceCS}) = _$_InitialDeliveryModel;
+      {bool? personalService,
+      bool? postalService,
+      bool? courierService,
+      String? cityPeS,
+      String? pricePoS,
+      String? priceCS}) = _$_InitialDeliveryModel;
 
   factory _InitialDeliveryModel.fromJson(Map<String, dynamic> json) =
       _$_InitialDeliveryModel.fromJson;
 
   @override
-  bool get personalService;
+  bool? get personalService => throw _privateConstructorUsedError;
   @override
-  bool get postalService;
+  bool? get postalService => throw _privateConstructorUsedError;
   @override
-  bool get courierService;
+  bool? get courierService => throw _privateConstructorUsedError;
   @override
-  String get cityPeS;
+  String? get cityPeS => throw _privateConstructorUsedError;
   @override
-  String get pricePoS;
+  String? get pricePoS => throw _privateConstructorUsedError;
   @override
-  String get priceCS;
+  String? get priceCS => throw _privateConstructorUsedError;
   @override
-  _$InitialDeliveryModelCopyWith<_InitialDeliveryModel> get copyWith;
+  @JsonKey(ignore: true)
+  _$InitialDeliveryModelCopyWith<_InitialDeliveryModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }

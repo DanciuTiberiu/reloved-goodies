@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'user_shared_info_model.dart';
 
@@ -8,6 +8,10 @@ part of 'user_shared_info_model.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 UserSharedInfoModel _$UserSharedInfoModelFromJson(Map<String, dynamic> json) {
   return _InitialUserSharedInfoModelUserSharedInfoModel.fromJson(json);
 }
@@ -16,12 +20,11 @@ UserSharedInfoModel _$UserSharedInfoModelFromJson(Map<String, dynamic> json) {
 class _$UserSharedInfoModelTearOff {
   const _$UserSharedInfoModelTearOff();
 
-// ignore: unused_element
   _InitialUserSharedInfoModelUserSharedInfoModel initial(
-      {String firstName = '',
-      String lastName = '',
-      String phoneNumber = '',
-      String email = ''}) {
+      {String? firstName = '',
+      String? lastName = '',
+      String? phoneNumber = '',
+      String? email = ''}) {
     return _InitialUserSharedInfoModelUserSharedInfoModel(
       firstName: firstName,
       lastName: lastName,
@@ -30,47 +33,54 @@ class _$UserSharedInfoModelTearOff {
     );
   }
 
-// ignore: unused_element
   UserSharedInfoModel fromJson(Map<String, Object> json) {
     return UserSharedInfoModel.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $UserSharedInfoModel = _$UserSharedInfoModelTearOff();
 
 /// @nodoc
 mixin _$UserSharedInfoModel {
-  String get firstName;
-  String get lastName;
-  String get phoneNumber;
-  String get email;
+  String? get firstName => throw _privateConstructorUsedError;
+  String? get lastName => throw _privateConstructorUsedError;
+  String? get phoneNumber => throw _privateConstructorUsedError;
+  String? get email => throw _privateConstructorUsedError;
 
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required
-        Result initial(String firstName, String lastName, String phoneNumber,
-            String email),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? firstName, String? lastName,
+            String? phoneNumber, String? email)
+        initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(
-        String firstName, String lastName, String phoneNumber, String email),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? firstName, String? lastName, String? phoneNumber,
+            String? email)?
+        initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required
-        Result initial(_InitialUserSharedInfoModelUserSharedInfoModel value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            _InitialUserSharedInfoModelUserSharedInfoModel value)
+        initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialUserSharedInfoModelUserSharedInfoModel value),
-    @required Result orElse(),
-  });
-  Map<String, dynamic> toJson();
-  $UserSharedInfoModelCopyWith<UserSharedInfoModel> get copyWith;
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialUserSharedInfoModelUserSharedInfoModel value)?
+        initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $UserSharedInfoModelCopyWith<UserSharedInfoModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -79,7 +89,10 @@ abstract class $UserSharedInfoModelCopyWith<$Res> {
           UserSharedInfoModel value, $Res Function(UserSharedInfoModel) then) =
       _$UserSharedInfoModelCopyWithImpl<$Res>;
   $Res call(
-      {String firstName, String lastName, String phoneNumber, String email});
+      {String? firstName,
+      String? lastName,
+      String? phoneNumber,
+      String? email});
 }
 
 /// @nodoc
@@ -93,17 +106,28 @@ class _$UserSharedInfoModelCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object firstName = freezed,
-    Object lastName = freezed,
-    Object phoneNumber = freezed,
-    Object email = freezed,
+    Object? firstName = freezed,
+    Object? lastName = freezed,
+    Object? phoneNumber = freezed,
+    Object? email = freezed,
   }) {
     return _then(_value.copyWith(
-      firstName: firstName == freezed ? _value.firstName : firstName as String,
-      lastName: lastName == freezed ? _value.lastName : lastName as String,
-      phoneNumber:
-          phoneNumber == freezed ? _value.phoneNumber : phoneNumber as String,
-      email: email == freezed ? _value.email : email as String,
+      firstName: firstName == freezed
+          ? _value.firstName
+          : firstName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      lastName: lastName == freezed
+          ? _value.lastName
+          : lastName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phoneNumber: phoneNumber == freezed
+          ? _value.phoneNumber
+          : phoneNumber // ignore: cast_nullable_to_non_nullable
+              as String?,
+      email: email == freezed
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -117,7 +141,10 @@ abstract class _$InitialUserSharedInfoModelUserSharedInfoModelCopyWith<$Res>
       __$InitialUserSharedInfoModelUserSharedInfoModelCopyWithImpl<$Res>;
   @override
   $Res call(
-      {String firstName, String lastName, String phoneNumber, String email});
+      {String? firstName,
+      String? lastName,
+      String? phoneNumber,
+      String? email});
 }
 
 /// @nodoc
@@ -136,17 +163,28 @@ class __$InitialUserSharedInfoModelUserSharedInfoModelCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object firstName = freezed,
-    Object lastName = freezed,
-    Object phoneNumber = freezed,
-    Object email = freezed,
+    Object? firstName = freezed,
+    Object? lastName = freezed,
+    Object? phoneNumber = freezed,
+    Object? email = freezed,
   }) {
     return _then(_InitialUserSharedInfoModelUserSharedInfoModel(
-      firstName: firstName == freezed ? _value.firstName : firstName as String,
-      lastName: lastName == freezed ? _value.lastName : lastName as String,
-      phoneNumber:
-          phoneNumber == freezed ? _value.phoneNumber : phoneNumber as String,
-      email: email == freezed ? _value.email : email as String,
+      firstName: firstName == freezed
+          ? _value.firstName
+          : firstName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      lastName: lastName == freezed
+          ? _value.lastName
+          : lastName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phoneNumber: phoneNumber == freezed
+          ? _value.phoneNumber
+          : phoneNumber // ignore: cast_nullable_to_non_nullable
+              as String?,
+      email: email == freezed
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -155,17 +193,12 @@ class __$InitialUserSharedInfoModelUserSharedInfoModelCopyWithImpl<$Res>
 
 /// @nodoc
 class _$_InitialUserSharedInfoModelUserSharedInfoModel
-    extends _InitialUserSharedInfoModelUserSharedInfoModel {
+    implements _InitialUserSharedInfoModelUserSharedInfoModel {
   _$_InitialUserSharedInfoModelUserSharedInfoModel(
       {this.firstName = '',
       this.lastName = '',
       this.phoneNumber = '',
-      this.email = ''})
-      : assert(firstName != null),
-        assert(lastName != null),
-        assert(phoneNumber != null),
-        assert(email != null),
-        super._();
+      this.email = ''});
 
   factory _$_InitialUserSharedInfoModelUserSharedInfoModel.fromJson(
           Map<String, dynamic> json) =>
@@ -173,16 +206,16 @@ class _$_InitialUserSharedInfoModelUserSharedInfoModel
 
   @JsonKey(defaultValue: '')
   @override
-  final String firstName;
+  final String? firstName;
   @JsonKey(defaultValue: '')
   @override
-  final String lastName;
+  final String? lastName;
   @JsonKey(defaultValue: '')
   @override
-  final String phoneNumber;
+  final String? phoneNumber;
   @JsonKey(defaultValue: '')
   @override
-  final String email;
+  final String? email;
 
   @override
   String toString() {
@@ -214,6 +247,7 @@ class _$_InitialUserSharedInfoModelUserSharedInfoModel
       const DeepCollectionEquality().hash(phoneNumber) ^
       const DeepCollectionEquality().hash(email);
 
+  @JsonKey(ignore: true)
   @override
   _$InitialUserSharedInfoModelUserSharedInfoModelCopyWith<
           _InitialUserSharedInfoModelUserSharedInfoModel>
@@ -223,23 +257,22 @@ class _$_InitialUserSharedInfoModelUserSharedInfoModel
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required
-        Result initial(String firstName, String lastName, String phoneNumber,
-            String email),
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? firstName, String? lastName,
+            String? phoneNumber, String? email)
+        initial,
   }) {
-    assert(initial != null);
     return initial(firstName, lastName, phoneNumber, email);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(
-        String firstName, String lastName, String phoneNumber, String email),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? firstName, String? lastName, String? phoneNumber,
+            String? email)?
+        initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(firstName, lastName, phoneNumber, email);
     }
@@ -248,21 +281,21 @@ class _$_InitialUserSharedInfoModelUserSharedInfoModel
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required
-        Result initial(_InitialUserSharedInfoModelUserSharedInfoModel value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(
+            _InitialUserSharedInfoModelUserSharedInfoModel value)
+        initial,
   }) {
-    assert(initial != null);
     return initial(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialUserSharedInfoModelUserSharedInfoModel value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialUserSharedInfoModelUserSharedInfoModel value)?
+        initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(this);
     }
@@ -276,27 +309,28 @@ class _$_InitialUserSharedInfoModelUserSharedInfoModel
 }
 
 abstract class _InitialUserSharedInfoModelUserSharedInfoModel
-    extends UserSharedInfoModel {
-  _InitialUserSharedInfoModelUserSharedInfoModel._() : super._();
+    implements UserSharedInfoModel {
   factory _InitialUserSharedInfoModelUserSharedInfoModel(
-      {String firstName,
-      String lastName,
-      String phoneNumber,
-      String email}) = _$_InitialUserSharedInfoModelUserSharedInfoModel;
+      {String? firstName,
+      String? lastName,
+      String? phoneNumber,
+      String? email}) = _$_InitialUserSharedInfoModelUserSharedInfoModel;
 
   factory _InitialUserSharedInfoModelUserSharedInfoModel.fromJson(
           Map<String, dynamic> json) =
       _$_InitialUserSharedInfoModelUserSharedInfoModel.fromJson;
 
   @override
-  String get firstName;
+  String? get firstName => throw _privateConstructorUsedError;
   @override
-  String get lastName;
+  String? get lastName => throw _privateConstructorUsedError;
   @override
-  String get phoneNumber;
+  String? get phoneNumber => throw _privateConstructorUsedError;
   @override
-  String get email;
+  String? get email => throw _privateConstructorUsedError;
   @override
+  @JsonKey(ignore: true)
   _$InitialUserSharedInfoModelUserSharedInfoModelCopyWith<
-      _InitialUserSharedInfoModelUserSharedInfoModel> get copyWith;
+          _InitialUserSharedInfoModelUserSharedInfoModel>
+      get copyWith => throw _privateConstructorUsedError;
 }

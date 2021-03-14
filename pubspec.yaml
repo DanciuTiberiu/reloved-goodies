@@ -24,14 +24,17 @@ dependencies:
 #Other:
   cupertino_icons: ^1.0.2
 
+#dependency_overrides:
+#  plugin_platform_interface: ^1.0.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 #Freezed:
   json_serializable: ^4.0.2
-  build_runner:
-  freezed: 0.14.1
+  build_runner: ^1.10.0
+  freezed: ^0.14.0+1
 
 flutter:
   uses-material-design: true

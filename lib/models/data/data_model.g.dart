@@ -9,8 +9,8 @@ part of 'data_model.dart';
 _$_InitialProductDataModel _$_$_InitialProductDataModelFromJson(
     Map<String, dynamic> json) {
   return _$_InitialProductDataModel(
-    title: json['title'] as String ?? '',
-    description: json['description'] as String ?? '',
+    title: json['title'] as String? ?? '',
+    description: json['description'] as String? ?? '',
     usage: json['usage'] == null
         ? null
         : UsageModel.fromJson(json['usage'] as Map<String, dynamic>),

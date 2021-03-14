@@ -8,9 +8,9 @@ part of 'price_model.dart';
 
 _$_InitialPriceModel _$_$_InitialPriceModelFromJson(Map<String, dynamic> json) {
   return _$_InitialPriceModel(
-    value: json['value'] as String ?? '',
-    free: json['free'] as bool ?? false,
-    negotiable: json['negotiable'] as bool ?? false,
+    value: json['value'] as String? ?? '',
+    free: json['free'] as bool? ?? false,
+    negotiable: json['negotiable'] as bool? ?? false,
   );
 }
 

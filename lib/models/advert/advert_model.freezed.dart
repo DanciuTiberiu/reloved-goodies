@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'advert_model.dart';
 
@@ -8,6 +8,10 @@ part of 'advert_model.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 AdvertModel _$AdvertModelFromJson(Map<String, dynamic> json) {
   return _InitialAdvertModel.fromJson(json);
 }
@@ -16,13 +20,12 @@ AdvertModel _$AdvertModelFromJson(Map<String, dynamic> json) {
 class _$AdvertModelTearOff {
   const _$AdvertModelTearOff();
 
-// ignore: unused_element
   _InitialAdvertModel initial(
-      {String advertId = '',
-      InfoModel info,
-      ProductDataModel data,
-      DeliveryModel delivery,
-      SellerModel seller}) {
+      {String? advertId = '',
+      InfoModel? info,
+      ProductDataModel? data,
+      DeliveryModel? delivery,
+      SellerModel? seller}) {
     return _InitialAdvertModel(
       advertId: advertId,
       info: info,
@@ -32,47 +35,56 @@ class _$AdvertModelTearOff {
     );
   }
 
-// ignore: unused_element
   AdvertModel fromJson(Map<String, Object> json) {
     return AdvertModel.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $AdvertModel = _$AdvertModelTearOff();
 
 /// @nodoc
 mixin _$AdvertModel {
-  String get advertId;
-  InfoModel get info;
-  ProductDataModel get data;
-  DeliveryModel get delivery;
-  SellerModel get seller;
+  String? get advertId => throw _privateConstructorUsedError;
+  InfoModel? get info => throw _privateConstructorUsedError;
+  ProductDataModel? get data => throw _privateConstructorUsedError;
+  DeliveryModel? get delivery => throw _privateConstructorUsedError;
+  SellerModel? get seller => throw _privateConstructorUsedError;
 
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required
-        Result initial(String advertId, InfoModel info, ProductDataModel data,
-            DeliveryModel delivery, SellerModel seller),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            String? advertId,
+            InfoModel? info,
+            ProductDataModel? data,
+            DeliveryModel? delivery,
+            SellerModel? seller)
+        initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(String advertId, InfoModel info, ProductDataModel data,
-        DeliveryModel delivery, SellerModel seller),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? advertId, InfoModel? info, ProductDataModel? data,
+            DeliveryModel? delivery, SellerModel? seller)?
+        initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialAdvertModel value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialAdvertModel value) initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialAdvertModel value),
-    @required Result orElse(),
-  });
-  Map<String, dynamic> toJson();
-  $AdvertModelCopyWith<AdvertModel> get copyWith;
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialAdvertModel value)? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $AdvertModelCopyWith<AdvertModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -81,16 +93,16 @@ abstract class $AdvertModelCopyWith<$Res> {
           AdvertModel value, $Res Function(AdvertModel) then) =
       _$AdvertModelCopyWithImpl<$Res>;
   $Res call(
-      {String advertId,
-      InfoModel info,
-      ProductDataModel data,
-      DeliveryModel delivery,
-      SellerModel seller});
+      {String? advertId,
+      InfoModel? info,
+      ProductDataModel? data,
+      DeliveryModel? delivery,
+      SellerModel? seller});
 
-  $InfoModelCopyWith<$Res> get info;
-  $ProductDataModelCopyWith<$Res> get data;
-  $DeliveryModelCopyWith<$Res> get delivery;
-  $SellerModelCopyWith<$Res> get seller;
+  $InfoModelCopyWith<$Res>? get info;
+  $ProductDataModelCopyWith<$Res>? get data;
+  $DeliveryModelCopyWith<$Res>? get delivery;
+  $SellerModelCopyWith<$Res>? get seller;
 }
 
 /// @nodoc
@@ -103,58 +115,76 @@ class _$AdvertModelCopyWithImpl<$Res> implements $AdvertModelCopyWith<$Res> {
 
   @override
   $Res call({
-    Object advertId = freezed,
-    Object info = freezed,
-    Object data = freezed,
-    Object delivery = freezed,
-    Object seller = freezed,
+    Object? advertId = freezed,
+    Object? info = freezed,
+    Object? data = freezed,
+    Object? delivery = freezed,
+    Object? seller = freezed,
   }) {
     return _then(_value.copyWith(
-      advertId: advertId == freezed ? _value.advertId : advertId as String,
-      info: info == freezed ? _value.info : info as InfoModel,
-      data: data == freezed ? _value.data : data as ProductDataModel,
-      delivery:
-          delivery == freezed ? _value.delivery : delivery as DeliveryModel,
-      seller: seller == freezed ? _value.seller : seller as SellerModel,
+      advertId: advertId == freezed
+          ? _value.advertId
+          : advertId // ignore: cast_nullable_to_non_nullable
+              as String?,
+      info: info == freezed
+          ? _value.info
+          : info // ignore: cast_nullable_to_non_nullable
+              as InfoModel?,
+      data: data == freezed
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as ProductDataModel?,
+      delivery: delivery == freezed
+          ? _value.delivery
+          : delivery // ignore: cast_nullable_to_non_nullable
+              as DeliveryModel?,
+      seller: seller == freezed
+          ? _value.seller
+          : seller // ignore: cast_nullable_to_non_nullable
+              as SellerModel?,
     ));
   }
 
   @override
-  $InfoModelCopyWith<$Res> get info {
+  $InfoModelCopyWith<$Res>? get info {
     if (_value.info == null) {
       return null;
     }
-    return $InfoModelCopyWith<$Res>(_value.info, (value) {
+
+    return $InfoModelCopyWith<$Res>(_value.info!, (value) {
       return _then(_value.copyWith(info: value));
     });
   }
 
   @override
-  $ProductDataModelCopyWith<$Res> get data {
+  $ProductDataModelCopyWith<$Res>? get data {
     if (_value.data == null) {
       return null;
     }
-    return $ProductDataModelCopyWith<$Res>(_value.data, (value) {
+
+    return $ProductDataModelCopyWith<$Res>(_value.data!, (value) {
       return _then(_value.copyWith(data: value));
     });
   }
 
   @override
-  $DeliveryModelCopyWith<$Res> get delivery {
+  $DeliveryModelCopyWith<$Res>? get delivery {
     if (_value.delivery == null) {
       return null;
     }
-    return $DeliveryModelCopyWith<$Res>(_value.delivery, (value) {
+
+    return $DeliveryModelCopyWith<$Res>(_value.delivery!, (value) {
       return _then(_value.copyWith(delivery: value));
     });
   }
 
   @override
-  $SellerModelCopyWith<$Res> get seller {
+  $SellerModelCopyWith<$Res>? get seller {
     if (_value.seller == null) {
       return null;
     }
-    return $SellerModelCopyWith<$Res>(_value.seller, (value) {
+
+    return $SellerModelCopyWith<$Res>(_value.seller!, (value) {
       return _then(_value.copyWith(seller: value));
     });
   }
@@ -168,20 +198,20 @@ abstract class _$InitialAdvertModelCopyWith<$Res>
       __$InitialAdvertModelCopyWithImpl<$Res>;
   @override
   $Res call(
-      {String advertId,
-      InfoModel info,
-      ProductDataModel data,
-      DeliveryModel delivery,
-      SellerModel seller});
+      {String? advertId,
+      InfoModel? info,
+      ProductDataModel? data,
+      DeliveryModel? delivery,
+      SellerModel? seller});
 
   @override
-  $InfoModelCopyWith<$Res> get info;
+  $InfoModelCopyWith<$Res>? get info;
   @override
-  $ProductDataModelCopyWith<$Res> get data;
+  $ProductDataModelCopyWith<$Res>? get data;
   @override
-  $DeliveryModelCopyWith<$Res> get delivery;
+  $DeliveryModelCopyWith<$Res>? get delivery;
   @override
-  $SellerModelCopyWith<$Res> get seller;
+  $SellerModelCopyWith<$Res>? get seller;
 }
 
 /// @nodoc
@@ -197,19 +227,33 @@ class __$InitialAdvertModelCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object advertId = freezed,
-    Object info = freezed,
-    Object data = freezed,
-    Object delivery = freezed,
-    Object seller = freezed,
+    Object? advertId = freezed,
+    Object? info = freezed,
+    Object? data = freezed,
+    Object? delivery = freezed,
+    Object? seller = freezed,
   }) {
     return _then(_InitialAdvertModel(
-      advertId: advertId == freezed ? _value.advertId : advertId as String,
-      info: info == freezed ? _value.info : info as InfoModel,
-      data: data == freezed ? _value.data : data as ProductDataModel,
-      delivery:
-          delivery == freezed ? _value.delivery : delivery as DeliveryModel,
-      seller: seller == freezed ? _value.seller : seller as SellerModel,
+      advertId: advertId == freezed
+          ? _value.advertId
+          : advertId // ignore: cast_nullable_to_non_nullable
+              as String?,
+      info: info == freezed
+          ? _value.info
+          : info // ignore: cast_nullable_to_non_nullable
+              as InfoModel?,
+      data: data == freezed
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as ProductDataModel?,
+      delivery: delivery == freezed
+          ? _value.delivery
+          : delivery // ignore: cast_nullable_to_non_nullable
+              as DeliveryModel?,
+      seller: seller == freezed
+          ? _value.seller
+          : seller // ignore: cast_nullable_to_non_nullable
+              as SellerModel?,
     ));
   }
 }
@@ -217,26 +261,24 @@ class __$InitialAdvertModelCopyWithImpl<$Res>
 @JsonSerializable()
 
 /// @nodoc
-class _$_InitialAdvertModel extends _InitialAdvertModel {
+class _$_InitialAdvertModel implements _InitialAdvertModel {
   const _$_InitialAdvertModel(
-      {this.advertId = '', this.info, this.data, this.delivery, this.seller})
-      : assert(advertId != null),
-        super._();
+      {this.advertId = '', this.info, this.data, this.delivery, this.seller});
 
   factory _$_InitialAdvertModel.fromJson(Map<String, dynamic> json) =>
       _$_$_InitialAdvertModelFromJson(json);
 
   @JsonKey(defaultValue: '')
   @override
-  final String advertId;
+  final String? advertId;
   @override
-  final InfoModel info;
+  final InfoModel? info;
   @override
-  final ProductDataModel data;
+  final ProductDataModel? data;
   @override
-  final DeliveryModel delivery;
+  final DeliveryModel? delivery;
   @override
-  final SellerModel seller;
+  final SellerModel? seller;
 
   @override
   String toString() {
@@ -270,29 +312,33 @@ class _$_InitialAdvertModel extends _InitialAdvertModel {
       const DeepCollectionEquality().hash(delivery) ^
       const DeepCollectionEquality().hash(seller);
 
+  @JsonKey(ignore: true)
   @override
   _$InitialAdvertModelCopyWith<_InitialAdvertModel> get copyWith =>
       __$InitialAdvertModelCopyWithImpl<_InitialAdvertModel>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required
-        Result initial(String advertId, InfoModel info, ProductDataModel data,
-            DeliveryModel delivery, SellerModel seller),
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            String? advertId,
+            InfoModel? info,
+            ProductDataModel? data,
+            DeliveryModel? delivery,
+            SellerModel? seller)
+        initial,
   }) {
-    assert(initial != null);
     return initial(advertId, info, data, delivery, seller);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(String advertId, InfoModel info, ProductDataModel data,
-        DeliveryModel delivery, SellerModel seller),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? advertId, InfoModel? info, ProductDataModel? data,
+            DeliveryModel? delivery, SellerModel? seller)?
+        initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(advertId, info, data, delivery, seller);
     }
@@ -301,20 +347,18 @@ class _$_InitialAdvertModel extends _InitialAdvertModel {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialAdvertModel value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialAdvertModel value) initial,
   }) {
-    assert(initial != null);
     return initial(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialAdvertModel value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialAdvertModel value)? initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(this);
     }
@@ -327,28 +371,29 @@ class _$_InitialAdvertModel extends _InitialAdvertModel {
   }
 }
 
-abstract class _InitialAdvertModel extends AdvertModel {
-  const _InitialAdvertModel._() : super._();
+abstract class _InitialAdvertModel implements AdvertModel {
   const factory _InitialAdvertModel(
-      {String advertId,
-      InfoModel info,
-      ProductDataModel data,
-      DeliveryModel delivery,
-      SellerModel seller}) = _$_InitialAdvertModel;
+      {String? advertId,
+      InfoModel? info,
+      ProductDataModel? data,
+      DeliveryModel? delivery,
+      SellerModel? seller}) = _$_InitialAdvertModel;
 
   factory _InitialAdvertModel.fromJson(Map<String, dynamic> json) =
       _$_InitialAdvertModel.fromJson;
 
   @override
-  String get advertId;
+  String? get advertId => throw _privateConstructorUsedError;
   @override
-  InfoModel get info;
+  InfoModel? get info => throw _privateConstructorUsedError;
   @override
-  ProductDataModel get data;
+  ProductDataModel? get data => throw _privateConstructorUsedError;
   @override
-  DeliveryModel get delivery;
+  DeliveryModel? get delivery => throw _privateConstructorUsedError;
   @override
-  SellerModel get seller;
+  SellerModel? get seller => throw _privateConstructorUsedError;
   @override
-  _$InitialAdvertModelCopyWith<_InitialAdvertModel> get copyWith;
+  @JsonKey(ignore: true)
+  _$InitialAdvertModelCopyWith<_InitialAdvertModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }

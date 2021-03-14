@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'user_model.dart';
 
@@ -8,6 +8,10 @@ part of 'user_model.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 UserModel _$UserModelFromJson(Map<String, dynamic> json) {
   return _InitialUserModel.fromJson(json);
 }
@@ -16,14 +20,13 @@ UserModel _$UserModelFromJson(Map<String, dynamic> json) {
 class _$UserModelTearOff {
   const _$UserModelTearOff();
 
-// ignore: unused_element
   _InitialUserModel initial(
-      {UserSharedInfoModel userSharedInfo,
-      String reviewScore = '',
-      String city = '',
-      String photo = '',
+      {UserSharedInfoModel? userSharedInfo,
+      String? reviewScore = '',
+      String? city = '',
+      String? photo = '',
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          DateTime birthday}) {
+          DateTime? birthday}) {
     return _InitialUserModel(
       userSharedInfo: userSharedInfo,
       reviewScore: reviewScore,
@@ -33,58 +36,63 @@ class _$UserModelTearOff {
     );
   }
 
-// ignore: unused_element
   UserModel fromJson(Map<String, Object> json) {
     return UserModel.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $UserModel = _$UserModelTearOff();
 
 /// @nodoc
 mixin _$UserModel {
-  UserSharedInfoModel get userSharedInfo;
-  String get reviewScore;
-  String get city;
-  String get photo;
+  UserSharedInfoModel? get userSharedInfo => throw _privateConstructorUsedError;
+  String? get reviewScore => throw _privateConstructorUsedError;
+  String? get city => throw _privateConstructorUsedError;
+  String? get photo => throw _privateConstructorUsedError;
   @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-  DateTime get birthday;
+  DateTime? get birthday => throw _privateConstructorUsedError;
 
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required
-        Result initial(
-            UserSharedInfoModel userSharedInfo,
-            String reviewScore,
-            String city,
-            String photo,
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            UserSharedInfoModel? userSharedInfo,
+            String? reviewScore,
+            String? city,
+            String? photo,
             @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-                DateTime birthday),
-  });
+                DateTime? birthday)
+        initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(
-        UserSharedInfoModel userSharedInfo,
-        String reviewScore,
-        String city,
-        String photo,
-        @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-            DateTime birthday),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            UserSharedInfoModel? userSharedInfo,
+            String? reviewScore,
+            String? city,
+            String? photo,
+            @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
+                DateTime? birthday)?
+        initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialUserModel value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialUserModel value) initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialUserModel value),
-    @required Result orElse(),
-  });
-  Map<String, dynamic> toJson();
-  $UserModelCopyWith<UserModel> get copyWith;
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialUserModel value)? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $UserModelCopyWith<UserModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -92,14 +100,14 @@ abstract class $UserModelCopyWith<$Res> {
   factory $UserModelCopyWith(UserModel value, $Res Function(UserModel) then) =
       _$UserModelCopyWithImpl<$Res>;
   $Res call(
-      {UserSharedInfoModel userSharedInfo,
-      String reviewScore,
-      String city,
-      String photo,
+      {UserSharedInfoModel? userSharedInfo,
+      String? reviewScore,
+      String? city,
+      String? photo,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          DateTime birthday});
+          DateTime? birthday});
 
-  $UserSharedInfoModelCopyWith<$Res> get userSharedInfo;
+  $UserSharedInfoModelCopyWith<$Res>? get userSharedInfo;
 }
 
 /// @nodoc
@@ -112,30 +120,43 @@ class _$UserModelCopyWithImpl<$Res> implements $UserModelCopyWith<$Res> {
 
   @override
   $Res call({
-    Object userSharedInfo = freezed,
-    Object reviewScore = freezed,
-    Object city = freezed,
-    Object photo = freezed,
-    Object birthday = freezed,
+    Object? userSharedInfo = freezed,
+    Object? reviewScore = freezed,
+    Object? city = freezed,
+    Object? photo = freezed,
+    Object? birthday = freezed,
   }) {
     return _then(_value.copyWith(
       userSharedInfo: userSharedInfo == freezed
           ? _value.userSharedInfo
-          : userSharedInfo as UserSharedInfoModel,
-      reviewScore:
-          reviewScore == freezed ? _value.reviewScore : reviewScore as String,
-      city: city == freezed ? _value.city : city as String,
-      photo: photo == freezed ? _value.photo : photo as String,
-      birthday: birthday == freezed ? _value.birthday : birthday as DateTime,
+          : userSharedInfo // ignore: cast_nullable_to_non_nullable
+              as UserSharedInfoModel?,
+      reviewScore: reviewScore == freezed
+          ? _value.reviewScore
+          : reviewScore // ignore: cast_nullable_to_non_nullable
+              as String?,
+      city: city == freezed
+          ? _value.city
+          : city // ignore: cast_nullable_to_non_nullable
+              as String?,
+      photo: photo == freezed
+          ? _value.photo
+          : photo // ignore: cast_nullable_to_non_nullable
+              as String?,
+      birthday: birthday == freezed
+          ? _value.birthday
+          : birthday // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
     ));
   }
 
   @override
-  $UserSharedInfoModelCopyWith<$Res> get userSharedInfo {
+  $UserSharedInfoModelCopyWith<$Res>? get userSharedInfo {
     if (_value.userSharedInfo == null) {
       return null;
     }
-    return $UserSharedInfoModelCopyWith<$Res>(_value.userSharedInfo, (value) {
+
+    return $UserSharedInfoModelCopyWith<$Res>(_value.userSharedInfo!, (value) {
       return _then(_value.copyWith(userSharedInfo: value));
     });
   }
@@ -149,15 +170,15 @@ abstract class _$InitialUserModelCopyWith<$Res>
       __$InitialUserModelCopyWithImpl<$Res>;
   @override
   $Res call(
-      {UserSharedInfoModel userSharedInfo,
-      String reviewScore,
-      String city,
-      String photo,
+      {UserSharedInfoModel? userSharedInfo,
+      String? reviewScore,
+      String? city,
+      String? photo,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          DateTime birthday});
+          DateTime? birthday});
 
   @override
-  $UserSharedInfoModelCopyWith<$Res> get userSharedInfo;
+  $UserSharedInfoModelCopyWith<$Res>? get userSharedInfo;
 }
 
 /// @nodoc
@@ -173,21 +194,33 @@ class __$InitialUserModelCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object userSharedInfo = freezed,
-    Object reviewScore = freezed,
-    Object city = freezed,
-    Object photo = freezed,
-    Object birthday = freezed,
+    Object? userSharedInfo = freezed,
+    Object? reviewScore = freezed,
+    Object? city = freezed,
+    Object? photo = freezed,
+    Object? birthday = freezed,
   }) {
     return _then(_InitialUserModel(
       userSharedInfo: userSharedInfo == freezed
           ? _value.userSharedInfo
-          : userSharedInfo as UserSharedInfoModel,
-      reviewScore:
-          reviewScore == freezed ? _value.reviewScore : reviewScore as String,
-      city: city == freezed ? _value.city : city as String,
-      photo: photo == freezed ? _value.photo : photo as String,
-      birthday: birthday == freezed ? _value.birthday : birthday as DateTime,
+          : userSharedInfo // ignore: cast_nullable_to_non_nullable
+              as UserSharedInfoModel?,
+      reviewScore: reviewScore == freezed
+          ? _value.reviewScore
+          : reviewScore // ignore: cast_nullable_to_non_nullable
+              as String?,
+      city: city == freezed
+          ? _value.city
+          : city // ignore: cast_nullable_to_non_nullable
+              as String?,
+      photo: photo == freezed
+          ? _value.photo
+          : photo // ignore: cast_nullable_to_non_nullable
+              as String?,
+      birthday: birthday == freezed
+          ? _value.birthday
+          : birthday // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
     ));
   }
 }
@@ -195,36 +228,32 @@ class __$InitialUserModelCopyWithImpl<$Res>
 @JsonSerializable()
 
 /// @nodoc
-class _$_InitialUserModel extends _InitialUserModel {
+class _$_InitialUserModel implements _InitialUserModel {
   _$_InitialUserModel(
       {this.userSharedInfo,
       this.reviewScore = '',
       this.city = '',
       this.photo = '',
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          this.birthday})
-      : assert(reviewScore != null),
-        assert(city != null),
-        assert(photo != null),
-        super._();
+          this.birthday});
 
   factory _$_InitialUserModel.fromJson(Map<String, dynamic> json) =>
       _$_$_InitialUserModelFromJson(json);
 
   @override
-  final UserSharedInfoModel userSharedInfo;
+  final UserSharedInfoModel? userSharedInfo;
   @JsonKey(defaultValue: '')
   @override
-  final String reviewScore;
+  final String? reviewScore;
   @JsonKey(defaultValue: '')
   @override
-  final String city;
+  final String? city;
   @JsonKey(defaultValue: '')
   @override
-  final String photo;
+  final String? photo;
   @override
   @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-  final DateTime birthday;
+  final DateTime? birthday;
 
   @override
   String toString() {
@@ -259,39 +288,39 @@ class _$_InitialUserModel extends _InitialUserModel {
       const DeepCollectionEquality().hash(photo) ^
       const DeepCollectionEquality().hash(birthday);
 
+  @JsonKey(ignore: true)
   @override
   _$InitialUserModelCopyWith<_InitialUserModel> get copyWith =>
       __$InitialUserModelCopyWithImpl<_InitialUserModel>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required
-        Result initial(
-            UserSharedInfoModel userSharedInfo,
-            String reviewScore,
-            String city,
-            String photo,
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            UserSharedInfoModel? userSharedInfo,
+            String? reviewScore,
+            String? city,
+            String? photo,
             @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-                DateTime birthday),
+                DateTime? birthday)
+        initial,
   }) {
-    assert(initial != null);
     return initial(userSharedInfo, reviewScore, city, photo, birthday);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(
-        UserSharedInfoModel userSharedInfo,
-        String reviewScore,
-        String city,
-        String photo,
-        @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-            DateTime birthday),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            UserSharedInfoModel? userSharedInfo,
+            String? reviewScore,
+            String? city,
+            String? photo,
+            @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
+                DateTime? birthday)?
+        initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(userSharedInfo, reviewScore, city, photo, birthday);
     }
@@ -300,20 +329,18 @@ class _$_InitialUserModel extends _InitialUserModel {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialUserModel value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialUserModel value) initial,
   }) {
-    assert(initial != null);
     return initial(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialUserModel value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialUserModel value)? initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(this);
     }
@@ -326,30 +353,31 @@ class _$_InitialUserModel extends _InitialUserModel {
   }
 }
 
-abstract class _InitialUserModel extends UserModel {
-  _InitialUserModel._() : super._();
+abstract class _InitialUserModel implements UserModel {
   factory _InitialUserModel(
-      {UserSharedInfoModel userSharedInfo,
-      String reviewScore,
-      String city,
-      String photo,
+      {UserSharedInfoModel? userSharedInfo,
+      String? reviewScore,
+      String? city,
+      String? photo,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          DateTime birthday}) = _$_InitialUserModel;
+          DateTime? birthday}) = _$_InitialUserModel;
 
   factory _InitialUserModel.fromJson(Map<String, dynamic> json) =
       _$_InitialUserModel.fromJson;
 
   @override
-  UserSharedInfoModel get userSharedInfo;
+  UserSharedInfoModel? get userSharedInfo => throw _privateConstructorUsedError;
   @override
-  String get reviewScore;
+  String? get reviewScore => throw _privateConstructorUsedError;
   @override
-  String get city;
+  String? get city => throw _privateConstructorUsedError;
   @override
-  String get photo;
+  String? get photo => throw _privateConstructorUsedError;
   @override
   @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-  DateTime get birthday;
+  DateTime? get birthday => throw _privateConstructorUsedError;
   @override
-  _$InitialUserModelCopyWith<_InitialUserModel> get copyWith;
+  @JsonKey(ignore: true)
+  _$InitialUserModelCopyWith<_InitialUserModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }

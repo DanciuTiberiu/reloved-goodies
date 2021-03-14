@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'price_model.dart';
 
@@ -8,6 +8,10 @@ part of 'price_model.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 PriceModel _$PriceModelFromJson(Map<String, dynamic> json) {
   return _InitialPriceModel.fromJson(json);
 }
@@ -16,9 +20,8 @@ PriceModel _$PriceModelFromJson(Map<String, dynamic> json) {
 class _$PriceModelTearOff {
   const _$PriceModelTearOff();
 
-// ignore: unused_element
   _InitialPriceModel initial(
-      {String value = '', bool free = false, bool negotiable = false}) {
+      {String? value = '', bool? free = false, bool? negotiable = false}) {
     return _InitialPriceModel(
       value: value,
       free: free,
@@ -26,42 +29,47 @@ class _$PriceModelTearOff {
     );
   }
 
-// ignore: unused_element
   PriceModel fromJson(Map<String, Object> json) {
     return PriceModel.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $PriceModel = _$PriceModelTearOff();
 
 /// @nodoc
 mixin _$PriceModel {
-  String get value;
-  bool get free;
-  bool get negotiable;
+  String? get value => throw _privateConstructorUsedError;
+  bool? get free => throw _privateConstructorUsedError;
+  bool? get negotiable => throw _privateConstructorUsedError;
 
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initial(String value, bool free, bool negotiable),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? value, bool? free, bool? negotiable)
+        initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(String value, bool free, bool negotiable),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? value, bool? free, bool? negotiable)? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialPriceModel value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialPriceModel value) initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialPriceModel value),
-    @required Result orElse(),
-  });
-  Map<String, dynamic> toJson();
-  $PriceModelCopyWith<PriceModel> get copyWith;
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialPriceModel value)? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PriceModelCopyWith<PriceModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -69,7 +77,7 @@ abstract class $PriceModelCopyWith<$Res> {
   factory $PriceModelCopyWith(
           PriceModel value, $Res Function(PriceModel) then) =
       _$PriceModelCopyWithImpl<$Res>;
-  $Res call({String value, bool free, bool negotiable});
+  $Res call({String? value, bool? free, bool? negotiable});
 }
 
 /// @nodoc
@@ -82,15 +90,23 @@ class _$PriceModelCopyWithImpl<$Res> implements $PriceModelCopyWith<$Res> {
 
   @override
   $Res call({
-    Object value = freezed,
-    Object free = freezed,
-    Object negotiable = freezed,
+    Object? value = freezed,
+    Object? free = freezed,
+    Object? negotiable = freezed,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed ? _value.value : value as String,
-      free: free == freezed ? _value.free : free as bool,
-      negotiable:
-          negotiable == freezed ? _value.negotiable : negotiable as bool,
+      value: value == freezed
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
+              as String?,
+      free: free == freezed
+          ? _value.free
+          : free // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      negotiable: negotiable == freezed
+          ? _value.negotiable
+          : negotiable // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -102,7 +118,7 @@ abstract class _$InitialPriceModelCopyWith<$Res>
           _InitialPriceModel value, $Res Function(_InitialPriceModel) then) =
       __$InitialPriceModelCopyWithImpl<$Res>;
   @override
-  $Res call({String value, bool free, bool negotiable});
+  $Res call({String? value, bool? free, bool? negotiable});
 }
 
 /// @nodoc
@@ -118,15 +134,23 @@ class __$InitialPriceModelCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object value = freezed,
-    Object free = freezed,
-    Object negotiable = freezed,
+    Object? value = freezed,
+    Object? free = freezed,
+    Object? negotiable = freezed,
   }) {
     return _then(_InitialPriceModel(
-      value: value == freezed ? _value.value : value as String,
-      free: free == freezed ? _value.free : free as bool,
-      negotiable:
-          negotiable == freezed ? _value.negotiable : negotiable as bool,
+      value: value == freezed
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
+              as String?,
+      free: free == freezed
+          ? _value.free
+          : free // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      negotiable: negotiable == freezed
+          ? _value.negotiable
+          : negotiable // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -134,26 +158,22 @@ class __$InitialPriceModelCopyWithImpl<$Res>
 @JsonSerializable()
 
 /// @nodoc
-class _$_InitialPriceModel extends _InitialPriceModel {
+class _$_InitialPriceModel implements _InitialPriceModel {
   _$_InitialPriceModel(
-      {this.value = '', this.free = false, this.negotiable = false})
-      : assert(value != null),
-        assert(free != null),
-        assert(negotiable != null),
-        super._();
+      {this.value = '', this.free = false, this.negotiable = false});
 
   factory _$_InitialPriceModel.fromJson(Map<String, dynamic> json) =>
       _$_$_InitialPriceModelFromJson(json);
 
   @JsonKey(defaultValue: '')
   @override
-  final String value;
+  final String? value;
   @JsonKey(defaultValue: false)
   @override
-  final bool free;
+  final bool? free;
   @JsonKey(defaultValue: false)
   @override
-  final bool negotiable;
+  final bool? negotiable;
 
   @override
   String toString() {
@@ -180,26 +200,26 @@ class _$_InitialPriceModel extends _InitialPriceModel {
       const DeepCollectionEquality().hash(free) ^
       const DeepCollectionEquality().hash(negotiable);
 
+  @JsonKey(ignore: true)
   @override
   _$InitialPriceModelCopyWith<_InitialPriceModel> get copyWith =>
       __$InitialPriceModelCopyWithImpl<_InitialPriceModel>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initial(String value, bool free, bool negotiable),
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? value, bool? free, bool? negotiable)
+        initial,
   }) {
-    assert(initial != null);
     return initial(value, free, negotiable);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(String value, bool free, bool negotiable),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? value, bool? free, bool? negotiable)? initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(value, free, negotiable);
     }
@@ -208,20 +228,18 @@ class _$_InitialPriceModel extends _InitialPriceModel {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialPriceModel value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialPriceModel value) initial,
   }) {
-    assert(initial != null);
     return initial(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialPriceModel value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialPriceModel value)? initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(this);
     }
@@ -234,20 +252,21 @@ class _$_InitialPriceModel extends _InitialPriceModel {
   }
 }
 
-abstract class _InitialPriceModel extends PriceModel {
-  _InitialPriceModel._() : super._();
-  factory _InitialPriceModel({String value, bool free, bool negotiable}) =
+abstract class _InitialPriceModel implements PriceModel {
+  factory _InitialPriceModel({String? value, bool? free, bool? negotiable}) =
       _$_InitialPriceModel;
 
   factory _InitialPriceModel.fromJson(Map<String, dynamic> json) =
       _$_InitialPriceModel.fromJson;
 
   @override
-  String get value;
+  String? get value => throw _privateConstructorUsedError;
   @override
-  bool get free;
+  bool? get free => throw _privateConstructorUsedError;
   @override
-  bool get negotiable;
+  bool? get negotiable => throw _privateConstructorUsedError;
   @override
-  _$InitialPriceModelCopyWith<_InitialPriceModel> get copyWith;
+  @JsonKey(ignore: true)
+  _$InitialPriceModelCopyWith<_InitialPriceModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }

@@ -8,9 +8,9 @@ part of 'usage_model.dart';
 
 _$_InitialUsageModel _$_$_InitialUsageModelFromJson(Map<String, dynamic> json) {
   return _$_InitialUsageModel(
-    opened: json['opened'] as bool ?? false,
-    used: json['used'] as bool ?? false,
-    tested: json['tested'] as bool ?? false,
+    opened: json['opened'] as bool? ?? false,
+    used: json['used'] as bool? ?? false,
+    tested: json['tested'] as bool? ?? false,
   );
 }
 

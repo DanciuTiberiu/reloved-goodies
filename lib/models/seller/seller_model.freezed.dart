@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'seller_model.dart';
 
@@ -8,6 +8,10 @@ part of 'seller_model.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 SellerModel _$SellerModelFromJson(Map<String, dynamic> json) {
   return _InitialSellerModel.fromJson(json);
 }
@@ -16,53 +20,57 @@ SellerModel _$SellerModelFromJson(Map<String, dynamic> json) {
 class _$SellerModelTearOff {
   const _$SellerModelTearOff();
 
-// ignore: unused_element
   _InitialSellerModel initial(
-      {ContactWaysModel contactWays, UserSharedInfoModel userSharedInfo}) {
+      {ContactWaysModel? contactWays, UserSharedInfoModel? userSharedInfo}) {
     return _InitialSellerModel(
       contactWays: contactWays,
       userSharedInfo: userSharedInfo,
     );
   }
 
-// ignore: unused_element
   SellerModel fromJson(Map<String, Object> json) {
     return SellerModel.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $SellerModel = _$SellerModelTearOff();
 
 /// @nodoc
 mixin _$SellerModel {
-  ContactWaysModel get contactWays;
-  UserSharedInfoModel get userSharedInfo;
+  ContactWaysModel? get contactWays => throw _privateConstructorUsedError;
+  UserSharedInfoModel? get userSharedInfo => throw _privateConstructorUsedError;
 
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required
-        Result initial(
-            ContactWaysModel contactWays, UserSharedInfoModel userSharedInfo),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            ContactWaysModel? contactWays, UserSharedInfoModel? userSharedInfo)
+        initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(
-        ContactWaysModel contactWays, UserSharedInfoModel userSharedInfo),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            ContactWaysModel? contactWays, UserSharedInfoModel? userSharedInfo)?
+        initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialSellerModel value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialSellerModel value) initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialSellerModel value),
-    @required Result orElse(),
-  });
-  Map<String, dynamic> toJson();
-  $SellerModelCopyWith<SellerModel> get copyWith;
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialSellerModel value)? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $SellerModelCopyWith<SellerModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -70,10 +78,11 @@ abstract class $SellerModelCopyWith<$Res> {
   factory $SellerModelCopyWith(
           SellerModel value, $Res Function(SellerModel) then) =
       _$SellerModelCopyWithImpl<$Res>;
-  $Res call({ContactWaysModel contactWays, UserSharedInfoModel userSharedInfo});
+  $Res call(
+      {ContactWaysModel? contactWays, UserSharedInfoModel? userSharedInfo});
 
-  $ContactWaysModelCopyWith<$Res> get contactWays;
-  $UserSharedInfoModelCopyWith<$Res> get userSharedInfo;
+  $ContactWaysModelCopyWith<$Res>? get contactWays;
+  $UserSharedInfoModelCopyWith<$Res>? get userSharedInfo;
 }
 
 /// @nodoc
@@ -86,35 +95,39 @@ class _$SellerModelCopyWithImpl<$Res> implements $SellerModelCopyWith<$Res> {
 
   @override
   $Res call({
-    Object contactWays = freezed,
-    Object userSharedInfo = freezed,
+    Object? contactWays = freezed,
+    Object? userSharedInfo = freezed,
   }) {
     return _then(_value.copyWith(
       contactWays: contactWays == freezed
           ? _value.contactWays
-          : contactWays as ContactWaysModel,
+          : contactWays // ignore: cast_nullable_to_non_nullable
+              as ContactWaysModel?,
       userSharedInfo: userSharedInfo == freezed
           ? _value.userSharedInfo
-          : userSharedInfo as UserSharedInfoModel,
+          : userSharedInfo // ignore: cast_nullable_to_non_nullable
+              as UserSharedInfoModel?,
     ));
   }
 
   @override
-  $ContactWaysModelCopyWith<$Res> get contactWays {
+  $ContactWaysModelCopyWith<$Res>? get contactWays {
     if (_value.contactWays == null) {
       return null;
     }
-    return $ContactWaysModelCopyWith<$Res>(_value.contactWays, (value) {
+
+    return $ContactWaysModelCopyWith<$Res>(_value.contactWays!, (value) {
       return _then(_value.copyWith(contactWays: value));
     });
   }
 
   @override
-  $UserSharedInfoModelCopyWith<$Res> get userSharedInfo {
+  $UserSharedInfoModelCopyWith<$Res>? get userSharedInfo {
     if (_value.userSharedInfo == null) {
       return null;
     }
-    return $UserSharedInfoModelCopyWith<$Res>(_value.userSharedInfo, (value) {
+
+    return $UserSharedInfoModelCopyWith<$Res>(_value.userSharedInfo!, (value) {
       return _then(_value.copyWith(userSharedInfo: value));
     });
   }
@@ -127,12 +140,13 @@ abstract class _$InitialSellerModelCopyWith<$Res>
           _InitialSellerModel value, $Res Function(_InitialSellerModel) then) =
       __$InitialSellerModelCopyWithImpl<$Res>;
   @override
-  $Res call({ContactWaysModel contactWays, UserSharedInfoModel userSharedInfo});
+  $Res call(
+      {ContactWaysModel? contactWays, UserSharedInfoModel? userSharedInfo});
 
   @override
-  $ContactWaysModelCopyWith<$Res> get contactWays;
+  $ContactWaysModelCopyWith<$Res>? get contactWays;
   @override
-  $UserSharedInfoModelCopyWith<$Res> get userSharedInfo;
+  $UserSharedInfoModelCopyWith<$Res>? get userSharedInfo;
 }
 
 /// @nodoc
@@ -148,16 +162,18 @@ class __$InitialSellerModelCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object contactWays = freezed,
-    Object userSharedInfo = freezed,
+    Object? contactWays = freezed,
+    Object? userSharedInfo = freezed,
   }) {
     return _then(_InitialSellerModel(
       contactWays: contactWays == freezed
           ? _value.contactWays
-          : contactWays as ContactWaysModel,
+          : contactWays // ignore: cast_nullable_to_non_nullable
+              as ContactWaysModel?,
       userSharedInfo: userSharedInfo == freezed
           ? _value.userSharedInfo
-          : userSharedInfo as UserSharedInfoModel,
+          : userSharedInfo // ignore: cast_nullable_to_non_nullable
+              as UserSharedInfoModel?,
     ));
   }
 }
@@ -165,16 +181,16 @@ class __$InitialSellerModelCopyWithImpl<$Res>
 @JsonSerializable()
 
 /// @nodoc
-class _$_InitialSellerModel extends _InitialSellerModel {
-  _$_InitialSellerModel({this.contactWays, this.userSharedInfo}) : super._();
+class _$_InitialSellerModel implements _InitialSellerModel {
+  _$_InitialSellerModel({this.contactWays, this.userSharedInfo});
 
   factory _$_InitialSellerModel.fromJson(Map<String, dynamic> json) =>
       _$_$_InitialSellerModelFromJson(json);
 
   @override
-  final ContactWaysModel contactWays;
+  final ContactWaysModel? contactWays;
   @override
-  final UserSharedInfoModel userSharedInfo;
+  final UserSharedInfoModel? userSharedInfo;
 
   @override
   String toString() {
@@ -199,29 +215,29 @@ class _$_InitialSellerModel extends _InitialSellerModel {
       const DeepCollectionEquality().hash(contactWays) ^
       const DeepCollectionEquality().hash(userSharedInfo);
 
+  @JsonKey(ignore: true)
   @override
   _$InitialSellerModelCopyWith<_InitialSellerModel> get copyWith =>
       __$InitialSellerModelCopyWithImpl<_InitialSellerModel>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required
-        Result initial(
-            ContactWaysModel contactWays, UserSharedInfoModel userSharedInfo),
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            ContactWaysModel? contactWays, UserSharedInfoModel? userSharedInfo)
+        initial,
   }) {
-    assert(initial != null);
     return initial(contactWays, userSharedInfo);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(
-        ContactWaysModel contactWays, UserSharedInfoModel userSharedInfo),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            ContactWaysModel? contactWays, UserSharedInfoModel? userSharedInfo)?
+        initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(contactWays, userSharedInfo);
     }
@@ -230,20 +246,18 @@ class _$_InitialSellerModel extends _InitialSellerModel {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialSellerModel value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialSellerModel value) initial,
   }) {
-    assert(initial != null);
     return initial(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialSellerModel value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialSellerModel value)? initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(this);
     }
@@ -256,19 +270,20 @@ class _$_InitialSellerModel extends _InitialSellerModel {
   }
 }
 
-abstract class _InitialSellerModel extends SellerModel {
-  _InitialSellerModel._() : super._();
+abstract class _InitialSellerModel implements SellerModel {
   factory _InitialSellerModel(
-      {ContactWaysModel contactWays,
-      UserSharedInfoModel userSharedInfo}) = _$_InitialSellerModel;
+      {ContactWaysModel? contactWays,
+      UserSharedInfoModel? userSharedInfo}) = _$_InitialSellerModel;
 
   factory _InitialSellerModel.fromJson(Map<String, dynamic> json) =
       _$_InitialSellerModel.fromJson;
 
   @override
-  ContactWaysModel get contactWays;
+  ContactWaysModel? get contactWays => throw _privateConstructorUsedError;
   @override
-  UserSharedInfoModel get userSharedInfo;
+  UserSharedInfoModel? get userSharedInfo => throw _privateConstructorUsedError;
   @override
-  _$InitialSellerModelCopyWith<_InitialSellerModel> get copyWith;
+  @JsonKey(ignore: true)
+  _$InitialSellerModelCopyWith<_InitialSellerModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }

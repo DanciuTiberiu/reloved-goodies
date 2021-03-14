@@ -13,14 +13,14 @@ class ShowSubcategoryAction extends ReduxAction<AppState> {
     Categories().getCategoryElements().forEach((element) {
       showSubcategory.add(false);
     });
-    if(state.homeState.showSubcategory.isNotEmpty) {
-      if (state.homeState.showSubcategory[index] != true) {
+    if(state.homeState!.showSubcategory!.isNotEmpty) {
+      if (state.homeState!.showSubcategory![index] != true) {
         showSubcategory[index] = true;
       }
     } else {
       showSubcategory[index] = true;
     }
 
-    return state.copyWith.homeState.call(showSubcategory: showSubcategory);
+    return state.copyWith.homeState!.call(showSubcategory: showSubcategory);
   }
 }

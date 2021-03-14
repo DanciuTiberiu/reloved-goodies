@@ -8,13 +8,13 @@ part of 'info_model.dart';
 
 _$_InitialInfoModel _$_$_InitialInfoModelFromJson(Map<String, dynamic> json) {
   return _$_InitialInfoModel(
-    advertNb: json['advertNb'] as int ?? 0,
-    viewsNb: json['viewsNb'] as int ?? 0,
+    advertNb: json['advertNb'] as int? ?? 0,
+    viewsNb: json['viewsNb'] as int? ?? 0,
     date: dateTimeFromTimestamp(json['date'] as Timestamp),
-    deleted: json['deleted'] as bool ?? false,
-    active: json['active'] as bool ?? true,
-    category: json['category'] as String ?? '',
-    subCategory: json['subCategory'] as String ?? '',
+    deleted: json['deleted'] as bool? ?? false,
+    active: json['active'] as bool? ?? true,
+    category: json['category'] as String? ?? '',
+    subCategory: json['subCategory'] as String? ?? '',
   );
 }
 

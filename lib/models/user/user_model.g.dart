@@ -12,9 +12,9 @@ _$_InitialUserModel _$_$_InitialUserModelFromJson(Map<String, dynamic> json) {
         ? null
         : UserSharedInfoModel.fromJson(
             json['userSharedInfo'] as Map<String, dynamic>),
-    reviewScore: json['reviewScore'] as String ?? '',
-    city: json['city'] as String ?? '',
-    photo: json['photo'] as String ?? '',
+    reviewScore: json['reviewScore'] as String? ?? '',
+    city: json['city'] as String? ?? '',
+    photo: json['photo'] as String? ?? '',
     birthday: dateTimeFromTimestamp(json['birthday'] as Timestamp),
   );
 }

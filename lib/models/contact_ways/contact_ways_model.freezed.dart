@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'contact_ways_model.dart';
 
@@ -8,6 +8,10 @@ part of 'contact_ways_model.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ContactWaysModel _$ContactWaysModelFromJson(Map<String, dynamic> json) {
   return _InitialContactWaysModel.fromJson(json);
 }
@@ -16,9 +20,8 @@ ContactWaysModel _$ContactWaysModelFromJson(Map<String, dynamic> json) {
 class _$ContactWaysModelTearOff {
   const _$ContactWaysModelTearOff();
 
-// ignore: unused_element
   _InitialContactWaysModel initial(
-      {bool phone = true, bool email = true, bool chat = true}) {
+      {bool? phone = true, bool? email = true, bool? chat = true}) {
     return _InitialContactWaysModel(
       phone: phone,
       email: email,
@@ -26,42 +29,46 @@ class _$ContactWaysModelTearOff {
     );
   }
 
-// ignore: unused_element
   ContactWaysModel fromJson(Map<String, Object> json) {
     return ContactWaysModel.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ContactWaysModel = _$ContactWaysModelTearOff();
 
 /// @nodoc
 mixin _$ContactWaysModel {
-  bool get phone;
-  bool get email;
-  bool get chat;
+  bool? get phone => throw _privateConstructorUsedError;
+  bool? get email => throw _privateConstructorUsedError;
+  bool? get chat => throw _privateConstructorUsedError;
 
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initial(bool phone, bool email, bool chat),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function(bool? phone, bool? email, bool? chat) initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(bool phone, bool email, bool chat),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(bool? phone, bool? email, bool? chat)? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialContactWaysModel value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialContactWaysModel value) initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialContactWaysModel value),
-    @required Result orElse(),
-  });
-  Map<String, dynamic> toJson();
-  $ContactWaysModelCopyWith<ContactWaysModel> get copyWith;
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialContactWaysModel value)? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $ContactWaysModelCopyWith<ContactWaysModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -69,7 +76,7 @@ abstract class $ContactWaysModelCopyWith<$Res> {
   factory $ContactWaysModelCopyWith(
           ContactWaysModel value, $Res Function(ContactWaysModel) then) =
       _$ContactWaysModelCopyWithImpl<$Res>;
-  $Res call({bool phone, bool email, bool chat});
+  $Res call({bool? phone, bool? email, bool? chat});
 }
 
 /// @nodoc
@@ -83,14 +90,23 @@ class _$ContactWaysModelCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object phone = freezed,
-    Object email = freezed,
-    Object chat = freezed,
+    Object? phone = freezed,
+    Object? email = freezed,
+    Object? chat = freezed,
   }) {
     return _then(_value.copyWith(
-      phone: phone == freezed ? _value.phone : phone as bool,
-      email: email == freezed ? _value.email : email as bool,
-      chat: chat == freezed ? _value.chat : chat as bool,
+      phone: phone == freezed
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      email: email == freezed
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      chat: chat == freezed
+          ? _value.chat
+          : chat // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -102,7 +118,7 @@ abstract class _$InitialContactWaysModelCopyWith<$Res>
           $Res Function(_InitialContactWaysModel) then) =
       __$InitialContactWaysModelCopyWithImpl<$Res>;
   @override
-  $Res call({bool phone, bool email, bool chat});
+  $Res call({bool? phone, bool? email, bool? chat});
 }
 
 /// @nodoc
@@ -119,14 +135,23 @@ class __$InitialContactWaysModelCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object phone = freezed,
-    Object email = freezed,
-    Object chat = freezed,
+    Object? phone = freezed,
+    Object? email = freezed,
+    Object? chat = freezed,
   }) {
     return _then(_InitialContactWaysModel(
-      phone: phone == freezed ? _value.phone : phone as bool,
-      email: email == freezed ? _value.email : email as bool,
-      chat: chat == freezed ? _value.chat : chat as bool,
+      phone: phone == freezed
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      email: email == freezed
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      chat: chat == freezed
+          ? _value.chat
+          : chat // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -134,26 +159,22 @@ class __$InitialContactWaysModelCopyWithImpl<$Res>
 @JsonSerializable()
 
 /// @nodoc
-class _$_InitialContactWaysModel extends _InitialContactWaysModel {
+class _$_InitialContactWaysModel implements _InitialContactWaysModel {
   _$_InitialContactWaysModel(
-      {this.phone = true, this.email = true, this.chat = true})
-      : assert(phone != null),
-        assert(email != null),
-        assert(chat != null),
-        super._();
+      {this.phone = true, this.email = true, this.chat = true});
 
   factory _$_InitialContactWaysModel.fromJson(Map<String, dynamic> json) =>
       _$_$_InitialContactWaysModelFromJson(json);
 
   @JsonKey(defaultValue: true)
   @override
-  final bool phone;
+  final bool? phone;
   @JsonKey(defaultValue: true)
   @override
-  final bool email;
+  final bool? email;
   @JsonKey(defaultValue: true)
   @override
-  final bool chat;
+  final bool? chat;
 
   @override
   String toString() {
@@ -179,6 +200,7 @@ class _$_InitialContactWaysModel extends _InitialContactWaysModel {
       const DeepCollectionEquality().hash(email) ^
       const DeepCollectionEquality().hash(chat);
 
+  @JsonKey(ignore: true)
   @override
   _$InitialContactWaysModelCopyWith<_InitialContactWaysModel> get copyWith =>
       __$InitialContactWaysModelCopyWithImpl<_InitialContactWaysModel>(
@@ -186,20 +208,18 @@ class _$_InitialContactWaysModel extends _InitialContactWaysModel {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initial(bool phone, bool email, bool chat),
+  TResult when<TResult extends Object?>({
+    required TResult Function(bool? phone, bool? email, bool? chat) initial,
   }) {
-    assert(initial != null);
     return initial(phone, email, chat);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(bool phone, bool email, bool chat),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(bool? phone, bool? email, bool? chat)? initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(phone, email, chat);
     }
@@ -208,20 +228,18 @@ class _$_InitialContactWaysModel extends _InitialContactWaysModel {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialContactWaysModel value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialContactWaysModel value) initial,
   }) {
-    assert(initial != null);
     return initial(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialContactWaysModel value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialContactWaysModel value)? initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(this);
     }
@@ -234,20 +252,21 @@ class _$_InitialContactWaysModel extends _InitialContactWaysModel {
   }
 }
 
-abstract class _InitialContactWaysModel extends ContactWaysModel {
-  _InitialContactWaysModel._() : super._();
-  factory _InitialContactWaysModel({bool phone, bool email, bool chat}) =
+abstract class _InitialContactWaysModel implements ContactWaysModel {
+  factory _InitialContactWaysModel({bool? phone, bool? email, bool? chat}) =
       _$_InitialContactWaysModel;
 
   factory _InitialContactWaysModel.fromJson(Map<String, dynamic> json) =
       _$_InitialContactWaysModel.fromJson;
 
   @override
-  bool get phone;
+  bool? get phone => throw _privateConstructorUsedError;
   @override
-  bool get email;
+  bool? get email => throw _privateConstructorUsedError;
   @override
-  bool get chat;
+  bool? get chat => throw _privateConstructorUsedError;
   @override
-  _$InitialContactWaysModelCopyWith<_InitialContactWaysModel> get copyWith;
+  @JsonKey(ignore: true)
+  _$InitialContactWaysModelCopyWith<_InitialContactWaysModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }

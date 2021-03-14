@@ -9,7 +9,7 @@ part of 'advert_model.dart';
 _$_InitialAdvertModel _$_$_InitialAdvertModelFromJson(
     Map<String, dynamic> json) {
   return _$_InitialAdvertModel(
-    advertId: json['advertId'] as String ?? '',
+    advertId: json['advertId'] as String? ?? '',
     info: json['info'] == null
         ? null
         : InfoModel.fromJson(json['info'] as Map<String, dynamic>),

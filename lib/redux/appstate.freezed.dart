@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'appstate.dart';
 
@@ -9,22 +9,16 @@ part of 'appstate.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 /// @nodoc
 class _$AppStateTearOff {
   const _$AppStateTearOff();
 
-// ignore: unused_element
-  _AppState call({HomeState homeState, CreateAdvertState addAdvertState}) {
-    return _AppState(
-      homeState: homeState,
-      addAdvertState: addAdvertState,
-    );
-  }
-
-// ignore: unused_element
   _InitialAppState initial(
-      {HomeState homeState = const HomeState.initial(),
-      CreateAdvertState createAdvertState =
+      {HomeState? homeState = const HomeState.initial(),
+      CreateAdvertState? createAdvertState =
           const CreateAdvertState.initial()}) {
     return _InitialAppState(
       homeState: homeState,
@@ -34,48 +28,54 @@ class _$AppStateTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $AppState = _$AppStateTearOff();
 
 /// @nodoc
 mixin _$AppState {
-  HomeState get homeState;
+  HomeState? get homeState => throw _privateConstructorUsedError;
+  CreateAdvertState? get createAdvertState =>
+      throw _privateConstructorUsedError;
 
   @optionalTypeArgs
-  Result when<Result extends Object>(
-    Result $default(HomeState homeState, CreateAdvertState addAdvertState), {
-    @required
-        Result initial(
-            HomeState homeState, CreateAdvertState createAdvertState),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            HomeState? homeState, CreateAdvertState? createAdvertState)
+        initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>(
-    Result $default(HomeState homeState, CreateAdvertState addAdvertState), {
-    Result initial(HomeState homeState, CreateAdvertState createAdvertState),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            HomeState? homeState, CreateAdvertState? createAdvertState)?
+        initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>(
-    Result $default(_AppState value), {
-    @required Result initial(_InitialAppState value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialAppState value) initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>(
-    Result $default(_AppState value), {
-    Result initial(_InitialAppState value),
-    @required Result orElse(),
-  });
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialAppState value)? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 
-  $AppStateCopyWith<AppState> get copyWith;
+  @JsonKey(ignore: true)
+  $AppStateCopyWith<AppState> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $AppStateCopyWith<$Res> {
   factory $AppStateCopyWith(AppState value, $Res Function(AppState) then) =
       _$AppStateCopyWithImpl<$Res>;
-  $Res call({HomeState homeState});
+  $Res call({HomeState? homeState, CreateAdvertState? createAdvertState});
 
-  $HomeStateCopyWith<$Res> get homeState;
+  $HomeStateCopyWith<$Res>? get homeState;
+  $CreateAdvertStateCopyWith<$Res>? get createAdvertState;
 }
 
 /// @nodoc
@@ -88,169 +88,42 @@ class _$AppStateCopyWithImpl<$Res> implements $AppStateCopyWith<$Res> {
 
   @override
   $Res call({
-    Object homeState = freezed,
+    Object? homeState = freezed,
+    Object? createAdvertState = freezed,
   }) {
     return _then(_value.copyWith(
-      homeState:
-          homeState == freezed ? _value.homeState : homeState as HomeState,
+      homeState: homeState == freezed
+          ? _value.homeState
+          : homeState // ignore: cast_nullable_to_non_nullable
+              as HomeState?,
+      createAdvertState: createAdvertState == freezed
+          ? _value.createAdvertState
+          : createAdvertState // ignore: cast_nullable_to_non_nullable
+              as CreateAdvertState?,
     ));
   }
 
   @override
-  $HomeStateCopyWith<$Res> get homeState {
+  $HomeStateCopyWith<$Res>? get homeState {
     if (_value.homeState == null) {
       return null;
     }
-    return $HomeStateCopyWith<$Res>(_value.homeState, (value) {
+
+    return $HomeStateCopyWith<$Res>(_value.homeState!, (value) {
       return _then(_value.copyWith(homeState: value));
     });
   }
-}
-
-/// @nodoc
-abstract class _$AppStateCopyWith<$Res> implements $AppStateCopyWith<$Res> {
-  factory _$AppStateCopyWith(_AppState value, $Res Function(_AppState) then) =
-      __$AppStateCopyWithImpl<$Res>;
-  @override
-  $Res call({HomeState homeState, CreateAdvertState addAdvertState});
 
   @override
-  $HomeStateCopyWith<$Res> get homeState;
-  $CreateAdvertStateCopyWith<$Res> get addAdvertState;
-}
-
-/// @nodoc
-class __$AppStateCopyWithImpl<$Res> extends _$AppStateCopyWithImpl<$Res>
-    implements _$AppStateCopyWith<$Res> {
-  __$AppStateCopyWithImpl(_AppState _value, $Res Function(_AppState) _then)
-      : super(_value, (v) => _then(v as _AppState));
-
-  @override
-  _AppState get _value => super._value as _AppState;
-
-  @override
-  $Res call({
-    Object homeState = freezed,
-    Object addAdvertState = freezed,
-  }) {
-    return _then(_AppState(
-      homeState:
-          homeState == freezed ? _value.homeState : homeState as HomeState,
-      addAdvertState: addAdvertState == freezed
-          ? _value.addAdvertState
-          : addAdvertState as CreateAdvertState,
-    ));
-  }
-
-  @override
-  $CreateAdvertStateCopyWith<$Res> get addAdvertState {
-    if (_value.addAdvertState == null) {
+  $CreateAdvertStateCopyWith<$Res>? get createAdvertState {
+    if (_value.createAdvertState == null) {
       return null;
     }
-    return $CreateAdvertStateCopyWith<$Res>(_value.addAdvertState, (value) {
-      return _then(_value.copyWith(addAdvertState: value));
+
+    return $CreateAdvertStateCopyWith<$Res>(_value.createAdvertState!, (value) {
+      return _then(_value.copyWith(createAdvertState: value));
     });
   }
-}
-
-/// @nodoc
-class _$_AppState implements _AppState {
-  _$_AppState({this.homeState, this.addAdvertState});
-
-  @override
-  final HomeState homeState;
-  @override
-  final CreateAdvertState addAdvertState;
-
-  @override
-  String toString() {
-    return 'AppState(homeState: $homeState, addAdvertState: $addAdvertState)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other is _AppState &&
-            (identical(other.homeState, homeState) ||
-                const DeepCollectionEquality()
-                    .equals(other.homeState, homeState)) &&
-            (identical(other.addAdvertState, addAdvertState) ||
-                const DeepCollectionEquality()
-                    .equals(other.addAdvertState, addAdvertState)));
-  }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(homeState) ^
-      const DeepCollectionEquality().hash(addAdvertState);
-
-  @override
-  _$AppStateCopyWith<_AppState> get copyWith =>
-      __$AppStateCopyWithImpl<_AppState>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  Result when<Result extends Object>(
-    Result $default(HomeState homeState, CreateAdvertState addAdvertState), {
-    @required
-        Result initial(
-            HomeState homeState, CreateAdvertState createAdvertState),
-  }) {
-    assert($default != null);
-    assert(initial != null);
-    return $default(homeState, addAdvertState);
-  }
-
-  @override
-  @optionalTypeArgs
-  Result maybeWhen<Result extends Object>(
-    Result $default(HomeState homeState, CreateAdvertState addAdvertState), {
-    Result initial(HomeState homeState, CreateAdvertState createAdvertState),
-    @required Result orElse(),
-  }) {
-    assert(orElse != null);
-    if ($default != null) {
-      return $default(homeState, addAdvertState);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  Result map<Result extends Object>(
-    Result $default(_AppState value), {
-    @required Result initial(_InitialAppState value),
-  }) {
-    assert($default != null);
-    assert(initial != null);
-    return $default(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  Result maybeMap<Result extends Object>(
-    Result $default(_AppState value), {
-    Result initial(_InitialAppState value),
-    @required Result orElse(),
-  }) {
-    assert(orElse != null);
-    if ($default != null) {
-      return $default(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _AppState implements AppState {
-  factory _AppState({HomeState homeState, CreateAdvertState addAdvertState}) =
-      _$_AppState;
-
-  @override
-  HomeState get homeState;
-  CreateAdvertState get addAdvertState;
-  @override
-  _$AppStateCopyWith<_AppState> get copyWith;
 }
 
 /// @nodoc
@@ -260,11 +133,12 @@ abstract class _$InitialAppStateCopyWith<$Res>
           _InitialAppState value, $Res Function(_InitialAppState) then) =
       __$InitialAppStateCopyWithImpl<$Res>;
   @override
-  $Res call({HomeState homeState, CreateAdvertState createAdvertState});
+  $Res call({HomeState? homeState, CreateAdvertState? createAdvertState});
 
   @override
-  $HomeStateCopyWith<$Res> get homeState;
-  $CreateAdvertStateCopyWith<$Res> get createAdvertState;
+  $HomeStateCopyWith<$Res>? get homeState;
+  @override
+  $CreateAdvertStateCopyWith<$Res>? get createAdvertState;
 }
 
 /// @nodoc
@@ -279,26 +153,19 @@ class __$InitialAppStateCopyWithImpl<$Res> extends _$AppStateCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object homeState = freezed,
-    Object createAdvertState = freezed,
+    Object? homeState = freezed,
+    Object? createAdvertState = freezed,
   }) {
     return _then(_InitialAppState(
-      homeState:
-          homeState == freezed ? _value.homeState : homeState as HomeState,
+      homeState: homeState == freezed
+          ? _value.homeState
+          : homeState // ignore: cast_nullable_to_non_nullable
+              as HomeState?,
       createAdvertState: createAdvertState == freezed
           ? _value.createAdvertState
-          : createAdvertState as CreateAdvertState,
+          : createAdvertState // ignore: cast_nullable_to_non_nullable
+              as CreateAdvertState?,
     ));
-  }
-
-  @override
-  $CreateAdvertStateCopyWith<$Res> get createAdvertState {
-    if (_value.createAdvertState == null) {
-      return null;
-    }
-    return $CreateAdvertStateCopyWith<$Res>(_value.createAdvertState, (value) {
-      return _then(_value.copyWith(createAdvertState: value));
-    });
   }
 }
 
@@ -306,16 +173,14 @@ class __$InitialAppStateCopyWithImpl<$Res> extends _$AppStateCopyWithImpl<$Res>
 class _$_InitialAppState implements _InitialAppState {
   _$_InitialAppState(
       {this.homeState = const HomeState.initial(),
-      this.createAdvertState = const CreateAdvertState.initial()})
-      : assert(homeState != null),
-        assert(createAdvertState != null);
+      this.createAdvertState = const CreateAdvertState.initial()});
 
   @JsonKey(defaultValue: const HomeState.initial())
   @override
-  final HomeState homeState;
+  final HomeState? homeState;
   @JsonKey(defaultValue: const CreateAdvertState.initial())
   @override
-  final CreateAdvertState createAdvertState;
+  final CreateAdvertState? createAdvertState;
 
   @override
   String toString() {
@@ -340,31 +205,29 @@ class _$_InitialAppState implements _InitialAppState {
       const DeepCollectionEquality().hash(homeState) ^
       const DeepCollectionEquality().hash(createAdvertState);
 
+  @JsonKey(ignore: true)
   @override
   _$InitialAppStateCopyWith<_InitialAppState> get copyWith =>
       __$InitialAppStateCopyWithImpl<_InitialAppState>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>(
-    Result $default(HomeState homeState, CreateAdvertState addAdvertState), {
-    @required
-        Result initial(
-            HomeState homeState, CreateAdvertState createAdvertState),
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            HomeState? homeState, CreateAdvertState? createAdvertState)
+        initial,
   }) {
-    assert($default != null);
-    assert(initial != null);
     return initial(homeState, createAdvertState);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>(
-    Result $default(HomeState homeState, CreateAdvertState addAdvertState), {
-    Result initial(HomeState homeState, CreateAdvertState createAdvertState),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            HomeState? homeState, CreateAdvertState? createAdvertState)?
+        initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(homeState, createAdvertState);
     }
@@ -373,23 +236,18 @@ class _$_InitialAppState implements _InitialAppState {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>(
-    Result $default(_AppState value), {
-    @required Result initial(_InitialAppState value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialAppState value) initial,
   }) {
-    assert($default != null);
-    assert(initial != null);
     return initial(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>(
-    Result $default(_AppState value), {
-    Result initial(_InitialAppState value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialAppState value)? initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(this);
     }
@@ -399,12 +257,16 @@ class _$_InitialAppState implements _InitialAppState {
 
 abstract class _InitialAppState implements AppState {
   factory _InitialAppState(
-      {HomeState homeState,
-      CreateAdvertState createAdvertState}) = _$_InitialAppState;
+      {HomeState? homeState,
+      CreateAdvertState? createAdvertState}) = _$_InitialAppState;
 
   @override
-  HomeState get homeState;
-  CreateAdvertState get createAdvertState;
+  HomeState? get homeState => throw _privateConstructorUsedError;
   @override
-  _$InitialAppStateCopyWith<_InitialAppState> get copyWith;
+  CreateAdvertState? get createAdvertState =>
+      throw _privateConstructorUsedError;
+  @override
+  @JsonKey(ignore: true)
+  _$InitialAppStateCopyWith<_InitialAppState> get copyWith =>
+      throw _privateConstructorUsedError;
 }

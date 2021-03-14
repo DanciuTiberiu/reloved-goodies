@@ -9,8 +9,8 @@ part of 'review_model.dart';
 _$_InitialReviewModel _$_$_InitialReviewModelFromJson(
     Map<String, dynamic> json) {
   return _$_InitialReviewModel(
-    starsNb: json['starsNb'] as int ?? 0,
-    note: json['note'] as String ?? '',
+    starsNb: json['starsNb'] as int? ?? 0,
+    note: json['note'] as String? ?? '',
   );
 }
 

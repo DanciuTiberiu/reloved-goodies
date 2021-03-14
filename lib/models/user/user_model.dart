@@ -11,12 +11,12 @@ part 'user_model.g.dart';
 abstract class UserModel implements _$UserModel {
 
   factory UserModel.initial({
-    UserSharedInfoModel userSharedInfo,
+    UserSharedInfoModel? userSharedInfo,
     @Default('') String? reviewScore,
     @Default('') String? city,
     @Default('') String? photo,
     @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-        DateTime birthday,
+        DateTime? birthday,
   }) = _InitialUserModel;
 
   factory UserModel.fromJson(Map<String, dynamic> json) =>

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'data_model.dart';
 
@@ -8,6 +8,10 @@ part of 'data_model.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ProductDataModel _$ProductDataModelFromJson(Map<String, dynamic> json) {
   return _InitialProductDataModel.fromJson(json);
 }
@@ -16,16 +20,15 @@ ProductDataModel _$ProductDataModelFromJson(Map<String, dynamic> json) {
 class _$ProductDataModelTearOff {
   const _$ProductDataModelTearOff();
 
-// ignore: unused_element
   _InitialProductDataModel initial(
-      {String title = '',
-      String description = '',
-      UsageModel usage,
+      {String? title = '',
+      String? description = '',
+      UsageModel? usage,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          DateTime openDate,
+          DateTime? openDate,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          DateTime expirationDate,
-      PriceModel price}) {
+          DateTime? expirationDate,
+      PriceModel? price}) {
     return _InitialProductDataModel(
       title: title,
       description: description,
@@ -36,64 +39,69 @@ class _$ProductDataModelTearOff {
     );
   }
 
-// ignore: unused_element
   ProductDataModel fromJson(Map<String, Object> json) {
     return ProductDataModel.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ProductDataModel = _$ProductDataModelTearOff();
 
 /// @nodoc
 mixin _$ProductDataModel {
-  String get title;
-  String get description;
-  UsageModel get usage;
+  String? get title => throw _privateConstructorUsedError;
+  String? get description => throw _privateConstructorUsedError;
+  UsageModel? get usage => throw _privateConstructorUsedError;
   @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-  DateTime get openDate;
+  DateTime? get openDate => throw _privateConstructorUsedError;
   @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-  DateTime get expirationDate;
-  PriceModel get price;
+  DateTime? get expirationDate => throw _privateConstructorUsedError;
+  PriceModel? get price => throw _privateConstructorUsedError;
 
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required
-        Result initial(
-            String title,
-            String description,
-            UsageModel usage,
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            String? title,
+            String? description,
+            UsageModel? usage,
             @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-                DateTime openDate,
+                DateTime? openDate,
             @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-                DateTime expirationDate,
-            PriceModel price),
-  });
+                DateTime? expirationDate,
+            PriceModel? price)
+        initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(
-        String title,
-        String description,
-        UsageModel usage,
-        @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-            DateTime openDate,
-        @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-            DateTime expirationDate,
-        PriceModel price),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            String? title,
+            String? description,
+            UsageModel? usage,
+            @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
+                DateTime? openDate,
+            @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
+                DateTime? expirationDate,
+            PriceModel? price)?
+        initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialProductDataModel value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialProductDataModel value) initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialProductDataModel value),
-    @required Result orElse(),
-  });
-  Map<String, dynamic> toJson();
-  $ProductDataModelCopyWith<ProductDataModel> get copyWith;
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialProductDataModel value)? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $ProductDataModelCopyWith<ProductDataModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -102,17 +110,17 @@ abstract class $ProductDataModelCopyWith<$Res> {
           ProductDataModel value, $Res Function(ProductDataModel) then) =
       _$ProductDataModelCopyWithImpl<$Res>;
   $Res call(
-      {String title,
-      String description,
-      UsageModel usage,
+      {String? title,
+      String? description,
+      UsageModel? usage,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          DateTime openDate,
+          DateTime? openDate,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          DateTime expirationDate,
-      PriceModel price});
+          DateTime? expirationDate,
+      PriceModel? price});
 
-  $UsageModelCopyWith<$Res> get usage;
-  $PriceModelCopyWith<$Res> get price;
+  $UsageModelCopyWith<$Res>? get usage;
+  $PriceModelCopyWith<$Res>? get price;
 }
 
 /// @nodoc
@@ -126,42 +134,59 @@ class _$ProductDataModelCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object title = freezed,
-    Object description = freezed,
-    Object usage = freezed,
-    Object openDate = freezed,
-    Object expirationDate = freezed,
-    Object price = freezed,
+    Object? title = freezed,
+    Object? description = freezed,
+    Object? usage = freezed,
+    Object? openDate = freezed,
+    Object? expirationDate = freezed,
+    Object? price = freezed,
   }) {
     return _then(_value.copyWith(
-      title: title == freezed ? _value.title : title as String,
-      description:
-          description == freezed ? _value.description : description as String,
-      usage: usage == freezed ? _value.usage : usage as UsageModel,
-      openDate: openDate == freezed ? _value.openDate : openDate as DateTime,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      usage: usage == freezed
+          ? _value.usage
+          : usage // ignore: cast_nullable_to_non_nullable
+              as UsageModel?,
+      openDate: openDate == freezed
+          ? _value.openDate
+          : openDate // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
       expirationDate: expirationDate == freezed
           ? _value.expirationDate
-          : expirationDate as DateTime,
-      price: price == freezed ? _value.price : price as PriceModel,
+          : expirationDate // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      price: price == freezed
+          ? _value.price
+          : price // ignore: cast_nullable_to_non_nullable
+              as PriceModel?,
     ));
   }
 
   @override
-  $UsageModelCopyWith<$Res> get usage {
+  $UsageModelCopyWith<$Res>? get usage {
     if (_value.usage == null) {
       return null;
     }
-    return $UsageModelCopyWith<$Res>(_value.usage, (value) {
+
+    return $UsageModelCopyWith<$Res>(_value.usage!, (value) {
       return _then(_value.copyWith(usage: value));
     });
   }
 
   @override
-  $PriceModelCopyWith<$Res> get price {
+  $PriceModelCopyWith<$Res>? get price {
     if (_value.price == null) {
       return null;
     }
-    return $PriceModelCopyWith<$Res>(_value.price, (value) {
+
+    return $PriceModelCopyWith<$Res>(_value.price!, (value) {
       return _then(_value.copyWith(price: value));
     });
   }
@@ -175,19 +200,19 @@ abstract class _$InitialProductDataModelCopyWith<$Res>
       __$InitialProductDataModelCopyWithImpl<$Res>;
   @override
   $Res call(
-      {String title,
-      String description,
-      UsageModel usage,
+      {String? title,
+      String? description,
+      UsageModel? usage,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          DateTime openDate,
+          DateTime? openDate,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          DateTime expirationDate,
-      PriceModel price});
+          DateTime? expirationDate,
+      PriceModel? price});
 
   @override
-  $UsageModelCopyWith<$Res> get usage;
+  $UsageModelCopyWith<$Res>? get usage;
   @override
-  $PriceModelCopyWith<$Res> get price;
+  $PriceModelCopyWith<$Res>? get price;
 }
 
 /// @nodoc
@@ -204,23 +229,38 @@ class __$InitialProductDataModelCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object title = freezed,
-    Object description = freezed,
-    Object usage = freezed,
-    Object openDate = freezed,
-    Object expirationDate = freezed,
-    Object price = freezed,
+    Object? title = freezed,
+    Object? description = freezed,
+    Object? usage = freezed,
+    Object? openDate = freezed,
+    Object? expirationDate = freezed,
+    Object? price = freezed,
   }) {
     return _then(_InitialProductDataModel(
-      title: title == freezed ? _value.title : title as String,
-      description:
-          description == freezed ? _value.description : description as String,
-      usage: usage == freezed ? _value.usage : usage as UsageModel,
-      openDate: openDate == freezed ? _value.openDate : openDate as DateTime,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      usage: usage == freezed
+          ? _value.usage
+          : usage // ignore: cast_nullable_to_non_nullable
+              as UsageModel?,
+      openDate: openDate == freezed
+          ? _value.openDate
+          : openDate // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
       expirationDate: expirationDate == freezed
           ? _value.expirationDate
-          : expirationDate as DateTime,
-      price: price == freezed ? _value.price : price as PriceModel,
+          : expirationDate // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      price: price == freezed
+          ? _value.price
+          : price // ignore: cast_nullable_to_non_nullable
+              as PriceModel?,
     ));
   }
 }
@@ -228,7 +268,7 @@ class __$InitialProductDataModelCopyWithImpl<$Res>
 @JsonSerializable()
 
 /// @nodoc
-class _$_InitialProductDataModel extends _InitialProductDataModel {
+class _$_InitialProductDataModel implements _InitialProductDataModel {
   _$_InitialProductDataModel(
       {this.title = '',
       this.description = '',
@@ -237,30 +277,27 @@ class _$_InitialProductDataModel extends _InitialProductDataModel {
           this.openDate,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
           this.expirationDate,
-      this.price})
-      : assert(title != null),
-        assert(description != null),
-        super._();
+      this.price});
 
   factory _$_InitialProductDataModel.fromJson(Map<String, dynamic> json) =>
       _$_$_InitialProductDataModelFromJson(json);
 
   @JsonKey(defaultValue: '')
   @override
-  final String title;
+  final String? title;
   @JsonKey(defaultValue: '')
   @override
-  final String description;
+  final String? description;
   @override
-  final UsageModel usage;
-  @override
-  @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-  final DateTime openDate;
+  final UsageModel? usage;
   @override
   @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-  final DateTime expirationDate;
+  final DateTime? openDate;
   @override
-  final PriceModel price;
+  @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
+  final DateTime? expirationDate;
+  @override
+  final PriceModel? price;
 
   @override
   String toString() {
@@ -298,6 +335,7 @@ class _$_InitialProductDataModel extends _InitialProductDataModel {
       const DeepCollectionEquality().hash(expirationDate) ^
       const DeepCollectionEquality().hash(price);
 
+  @JsonKey(ignore: true)
   @override
   _$InitialProductDataModelCopyWith<_InitialProductDataModel> get copyWith =>
       __$InitialProductDataModelCopyWithImpl<_InitialProductDataModel>(
@@ -305,37 +343,36 @@ class _$_InitialProductDataModel extends _InitialProductDataModel {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required
-        Result initial(
-            String title,
-            String description,
-            UsageModel usage,
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            String? title,
+            String? description,
+            UsageModel? usage,
             @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-                DateTime openDate,
+                DateTime? openDate,
             @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-                DateTime expirationDate,
-            PriceModel price),
+                DateTime? expirationDate,
+            PriceModel? price)
+        initial,
   }) {
-    assert(initial != null);
     return initial(title, description, usage, openDate, expirationDate, price);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(
-        String title,
-        String description,
-        UsageModel usage,
-        @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-            DateTime openDate,
-        @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-            DateTime expirationDate,
-        PriceModel price),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            String? title,
+            String? description,
+            UsageModel? usage,
+            @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
+                DateTime? openDate,
+            @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
+                DateTime? expirationDate,
+            PriceModel? price)?
+        initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(
           title, description, usage, openDate, expirationDate, price);
@@ -345,20 +382,18 @@ class _$_InitialProductDataModel extends _InitialProductDataModel {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialProductDataModel value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialProductDataModel value) initial,
   }) {
-    assert(initial != null);
     return initial(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialProductDataModel value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialProductDataModel value)? initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(this);
     }
@@ -371,35 +406,36 @@ class _$_InitialProductDataModel extends _InitialProductDataModel {
   }
 }
 
-abstract class _InitialProductDataModel extends ProductDataModel {
-  _InitialProductDataModel._() : super._();
+abstract class _InitialProductDataModel implements ProductDataModel {
   factory _InitialProductDataModel(
-      {String title,
-      String description,
-      UsageModel usage,
+      {String? title,
+      String? description,
+      UsageModel? usage,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          DateTime openDate,
+          DateTime? openDate,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          DateTime expirationDate,
-      PriceModel price}) = _$_InitialProductDataModel;
+          DateTime? expirationDate,
+      PriceModel? price}) = _$_InitialProductDataModel;
 
   factory _InitialProductDataModel.fromJson(Map<String, dynamic> json) =
       _$_InitialProductDataModel.fromJson;
 
   @override
-  String get title;
+  String? get title => throw _privateConstructorUsedError;
   @override
-  String get description;
+  String? get description => throw _privateConstructorUsedError;
   @override
-  UsageModel get usage;
-  @override
-  @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-  DateTime get openDate;
+  UsageModel? get usage => throw _privateConstructorUsedError;
   @override
   @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-  DateTime get expirationDate;
+  DateTime? get openDate => throw _privateConstructorUsedError;
   @override
-  PriceModel get price;
+  @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
+  DateTime? get expirationDate => throw _privateConstructorUsedError;
   @override
-  _$InitialProductDataModelCopyWith<_InitialProductDataModel> get copyWith;
+  PriceModel? get price => throw _privateConstructorUsedError;
+  @override
+  @JsonKey(ignore: true)
+  _$InitialProductDataModelCopyWith<_InitialProductDataModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }

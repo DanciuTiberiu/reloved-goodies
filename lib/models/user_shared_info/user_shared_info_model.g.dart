@@ -10,10 +10,10 @@ _$_InitialUserSharedInfoModelUserSharedInfoModel
     _$_$_InitialUserSharedInfoModelUserSharedInfoModelFromJson(
         Map<String, dynamic> json) {
   return _$_InitialUserSharedInfoModelUserSharedInfoModel(
-    firstName: json['firstName'] as String ?? '',
-    lastName: json['lastName'] as String ?? '',
-    phoneNumber: json['phoneNumber'] as String ?? '',
-    email: json['email'] as String ?? '',
+    firstName: json['firstName'] as String? ?? '',
+    lastName: json['lastName'] as String? ?? '',
+    phoneNumber: json['phoneNumber'] as String? ?? '',
+    email: json['email'] as String? ?? '',
   );
 }
 

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'info_model.dart';
 
@@ -8,6 +8,10 @@ part of 'info_model.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 InfoModel _$InfoModelFromJson(Map<String, dynamic> json) {
   return _InitialInfoModel.fromJson(json);
 }
@@ -16,16 +20,15 @@ InfoModel _$InfoModelFromJson(Map<String, dynamic> json) {
 class _$InfoModelTearOff {
   const _$InfoModelTearOff();
 
-// ignore: unused_element
   _InitialInfoModel initial(
-      {int advertNb = 0,
-      int viewsNb = 0,
+      {int? advertNb = 0,
+      int? viewsNb = 0,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          DateTime date,
-      bool deleted = false,
-      bool active = true,
-      String category = '',
-      String subCategory = ''}) {
+          DateTime? date,
+      bool? deleted = false,
+      bool? active = true,
+      String? category = '',
+      String? subCategory = ''}) {
     return _InitialInfoModel(
       advertNb: advertNb,
       viewsNb: viewsNb,
@@ -37,64 +40,69 @@ class _$InfoModelTearOff {
     );
   }
 
-// ignore: unused_element
   InfoModel fromJson(Map<String, Object> json) {
     return InfoModel.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $InfoModel = _$InfoModelTearOff();
 
 /// @nodoc
 mixin _$InfoModel {
-  int get advertNb;
-  int get viewsNb;
+  int? get advertNb => throw _privateConstructorUsedError;
+  int? get viewsNb => throw _privateConstructorUsedError;
   @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-  DateTime get date;
-  bool get deleted;
-  bool get active;
-  String get category;
-  String get subCategory;
+  DateTime? get date => throw _privateConstructorUsedError;
+  bool? get deleted => throw _privateConstructorUsedError;
+  bool? get active => throw _privateConstructorUsedError;
+  String? get category => throw _privateConstructorUsedError;
+  String? get subCategory => throw _privateConstructorUsedError;
 
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required
-        Result initial(
-            int advertNb,
-            int viewsNb,
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            int? advertNb,
+            int? viewsNb,
             @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-                DateTime date,
-            bool deleted,
-            bool active,
-            String category,
-            String subCategory),
-  });
+                DateTime? date,
+            bool? deleted,
+            bool? active,
+            String? category,
+            String? subCategory)
+        initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(
-        int advertNb,
-        int viewsNb,
-        @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-            DateTime date,
-        bool deleted,
-        bool active,
-        String category,
-        String subCategory),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            int? advertNb,
+            int? viewsNb,
+            @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
+                DateTime? date,
+            bool? deleted,
+            bool? active,
+            String? category,
+            String? subCategory)?
+        initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialInfoModel value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialInfoModel value) initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialInfoModel value),
-    @required Result orElse(),
-  });
-  Map<String, dynamic> toJson();
-  $InfoModelCopyWith<InfoModel> get copyWith;
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialInfoModel value)? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $InfoModelCopyWith<InfoModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -102,14 +110,14 @@ abstract class $InfoModelCopyWith<$Res> {
   factory $InfoModelCopyWith(InfoModel value, $Res Function(InfoModel) then) =
       _$InfoModelCopyWithImpl<$Res>;
   $Res call(
-      {int advertNb,
-      int viewsNb,
+      {int? advertNb,
+      int? viewsNb,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          DateTime date,
-      bool deleted,
-      bool active,
-      String category,
-      String subCategory});
+          DateTime? date,
+      bool? deleted,
+      bool? active,
+      String? category,
+      String? subCategory});
 }
 
 /// @nodoc
@@ -122,23 +130,43 @@ class _$InfoModelCopyWithImpl<$Res> implements $InfoModelCopyWith<$Res> {
 
   @override
   $Res call({
-    Object advertNb = freezed,
-    Object viewsNb = freezed,
-    Object date = freezed,
-    Object deleted = freezed,
-    Object active = freezed,
-    Object category = freezed,
-    Object subCategory = freezed,
+    Object? advertNb = freezed,
+    Object? viewsNb = freezed,
+    Object? date = freezed,
+    Object? deleted = freezed,
+    Object? active = freezed,
+    Object? category = freezed,
+    Object? subCategory = freezed,
   }) {
     return _then(_value.copyWith(
-      advertNb: advertNb == freezed ? _value.advertNb : advertNb as int,
-      viewsNb: viewsNb == freezed ? _value.viewsNb : viewsNb as int,
-      date: date == freezed ? _value.date : date as DateTime,
-      deleted: deleted == freezed ? _value.deleted : deleted as bool,
-      active: active == freezed ? _value.active : active as bool,
-      category: category == freezed ? _value.category : category as String,
-      subCategory:
-          subCategory == freezed ? _value.subCategory : subCategory as String,
+      advertNb: advertNb == freezed
+          ? _value.advertNb
+          : advertNb // ignore: cast_nullable_to_non_nullable
+              as int?,
+      viewsNb: viewsNb == freezed
+          ? _value.viewsNb
+          : viewsNb // ignore: cast_nullable_to_non_nullable
+              as int?,
+      date: date == freezed
+          ? _value.date
+          : date // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      deleted: deleted == freezed
+          ? _value.deleted
+          : deleted // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      active: active == freezed
+          ? _value.active
+          : active // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      category: category == freezed
+          ? _value.category
+          : category // ignore: cast_nullable_to_non_nullable
+              as String?,
+      subCategory: subCategory == freezed
+          ? _value.subCategory
+          : subCategory // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -151,14 +179,14 @@ abstract class _$InitialInfoModelCopyWith<$Res>
       __$InitialInfoModelCopyWithImpl<$Res>;
   @override
   $Res call(
-      {int advertNb,
-      int viewsNb,
+      {int? advertNb,
+      int? viewsNb,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          DateTime date,
-      bool deleted,
-      bool active,
-      String category,
-      String subCategory});
+          DateTime? date,
+      bool? deleted,
+      bool? active,
+      String? category,
+      String? subCategory});
 }
 
 /// @nodoc
@@ -174,23 +202,43 @@ class __$InitialInfoModelCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object advertNb = freezed,
-    Object viewsNb = freezed,
-    Object date = freezed,
-    Object deleted = freezed,
-    Object active = freezed,
-    Object category = freezed,
-    Object subCategory = freezed,
+    Object? advertNb = freezed,
+    Object? viewsNb = freezed,
+    Object? date = freezed,
+    Object? deleted = freezed,
+    Object? active = freezed,
+    Object? category = freezed,
+    Object? subCategory = freezed,
   }) {
     return _then(_InitialInfoModel(
-      advertNb: advertNb == freezed ? _value.advertNb : advertNb as int,
-      viewsNb: viewsNb == freezed ? _value.viewsNb : viewsNb as int,
-      date: date == freezed ? _value.date : date as DateTime,
-      deleted: deleted == freezed ? _value.deleted : deleted as bool,
-      active: active == freezed ? _value.active : active as bool,
-      category: category == freezed ? _value.category : category as String,
-      subCategory:
-          subCategory == freezed ? _value.subCategory : subCategory as String,
+      advertNb: advertNb == freezed
+          ? _value.advertNb
+          : advertNb // ignore: cast_nullable_to_non_nullable
+              as int?,
+      viewsNb: viewsNb == freezed
+          ? _value.viewsNb
+          : viewsNb // ignore: cast_nullable_to_non_nullable
+              as int?,
+      date: date == freezed
+          ? _value.date
+          : date // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      deleted: deleted == freezed
+          ? _value.deleted
+          : deleted // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      active: active == freezed
+          ? _value.active
+          : active // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      category: category == freezed
+          ? _value.category
+          : category // ignore: cast_nullable_to_non_nullable
+              as String?,
+      subCategory: subCategory == freezed
+          ? _value.subCategory
+          : subCategory // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -198,7 +246,7 @@ class __$InitialInfoModelCopyWithImpl<$Res>
 @JsonSerializable()
 
 /// @nodoc
-class _$_InitialInfoModel extends _InitialInfoModel {
+class _$_InitialInfoModel implements _InitialInfoModel {
   _$_InitialInfoModel(
       {this.advertNb = 0,
       this.viewsNb = 0,
@@ -207,39 +255,32 @@ class _$_InitialInfoModel extends _InitialInfoModel {
       this.deleted = false,
       this.active = true,
       this.category = '',
-      this.subCategory = ''})
-      : assert(advertNb != null),
-        assert(viewsNb != null),
-        assert(deleted != null),
-        assert(active != null),
-        assert(category != null),
-        assert(subCategory != null),
-        super._();
+      this.subCategory = ''});
 
   factory _$_InitialInfoModel.fromJson(Map<String, dynamic> json) =>
       _$_$_InitialInfoModelFromJson(json);
 
   @JsonKey(defaultValue: 0)
   @override
-  final int advertNb;
+  final int? advertNb;
   @JsonKey(defaultValue: 0)
   @override
-  final int viewsNb;
+  final int? viewsNb;
   @override
   @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-  final DateTime date;
+  final DateTime? date;
   @JsonKey(defaultValue: false)
   @override
-  final bool deleted;
+  final bool? deleted;
   @JsonKey(defaultValue: true)
   @override
-  final bool active;
+  final bool? active;
   @JsonKey(defaultValue: '')
   @override
-  final String category;
+  final String? category;
   @JsonKey(defaultValue: '')
   @override
-  final String subCategory;
+  final String? subCategory;
 
   @override
   String toString() {
@@ -282,44 +323,44 @@ class _$_InitialInfoModel extends _InitialInfoModel {
       const DeepCollectionEquality().hash(category) ^
       const DeepCollectionEquality().hash(subCategory);
 
+  @JsonKey(ignore: true)
   @override
   _$InitialInfoModelCopyWith<_InitialInfoModel> get copyWith =>
       __$InitialInfoModelCopyWithImpl<_InitialInfoModel>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required
-        Result initial(
-            int advertNb,
-            int viewsNb,
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            int? advertNb,
+            int? viewsNb,
             @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-                DateTime date,
-            bool deleted,
-            bool active,
-            String category,
-            String subCategory),
+                DateTime? date,
+            bool? deleted,
+            bool? active,
+            String? category,
+            String? subCategory)
+        initial,
   }) {
-    assert(initial != null);
     return initial(
         advertNb, viewsNb, date, deleted, active, category, subCategory);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(
-        int advertNb,
-        int viewsNb,
-        @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-            DateTime date,
-        bool deleted,
-        bool active,
-        String category,
-        String subCategory),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            int? advertNb,
+            int? viewsNb,
+            @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
+                DateTime? date,
+            bool? deleted,
+            bool? active,
+            String? category,
+            String? subCategory)?
+        initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(
           advertNb, viewsNb, date, deleted, active, category, subCategory);
@@ -329,20 +370,18 @@ class _$_InitialInfoModel extends _InitialInfoModel {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialInfoModel value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialInfoModel value) initial,
   }) {
-    assert(initial != null);
     return initial(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialInfoModel value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialInfoModel value)? initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(this);
     }
@@ -355,36 +394,37 @@ class _$_InitialInfoModel extends _InitialInfoModel {
   }
 }
 
-abstract class _InitialInfoModel extends InfoModel {
-  _InitialInfoModel._() : super._();
+abstract class _InitialInfoModel implements InfoModel {
   factory _InitialInfoModel(
-      {int advertNb,
-      int viewsNb,
+      {int? advertNb,
+      int? viewsNb,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          DateTime date,
-      bool deleted,
-      bool active,
-      String category,
-      String subCategory}) = _$_InitialInfoModel;
+          DateTime? date,
+      bool? deleted,
+      bool? active,
+      String? category,
+      String? subCategory}) = _$_InitialInfoModel;
 
   factory _InitialInfoModel.fromJson(Map<String, dynamic> json) =
       _$_InitialInfoModel.fromJson;
 
   @override
-  int get advertNb;
+  int? get advertNb => throw _privateConstructorUsedError;
   @override
-  int get viewsNb;
+  int? get viewsNb => throw _privateConstructorUsedError;
   @override
   @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-  DateTime get date;
+  DateTime? get date => throw _privateConstructorUsedError;
   @override
-  bool get deleted;
+  bool? get deleted => throw _privateConstructorUsedError;
   @override
-  bool get active;
+  bool? get active => throw _privateConstructorUsedError;
   @override
-  String get category;
+  String? get category => throw _privateConstructorUsedError;
   @override
-  String get subCategory;
+  String? get subCategory => throw _privateConstructorUsedError;
   @override
-  _$InitialInfoModelCopyWith<_InitialInfoModel> get copyWith;
+  @JsonKey(ignore: true)
+  _$InitialInfoModelCopyWith<_InitialInfoModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'usage_model.dart';
 
@@ -8,6 +8,10 @@ part of 'usage_model.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 UsageModel _$UsageModelFromJson(Map<String, dynamic> json) {
   return _InitialUsageModel.fromJson(json);
 }
@@ -16,9 +20,8 @@ UsageModel _$UsageModelFromJson(Map<String, dynamic> json) {
 class _$UsageModelTearOff {
   const _$UsageModelTearOff();
 
-// ignore: unused_element
   _InitialUsageModel initial(
-      {bool opened = false, bool used = false, bool tested = false}) {
+      {bool? opened = false, bool? used = false, bool? tested = false}) {
     return _InitialUsageModel(
       opened: opened,
       used: used,
@@ -26,42 +29,46 @@ class _$UsageModelTearOff {
     );
   }
 
-// ignore: unused_element
   UsageModel fromJson(Map<String, Object> json) {
     return UsageModel.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $UsageModel = _$UsageModelTearOff();
 
 /// @nodoc
 mixin _$UsageModel {
-  bool get opened;
-  bool get used;
-  bool get tested;
+  bool? get opened => throw _privateConstructorUsedError;
+  bool? get used => throw _privateConstructorUsedError;
+  bool? get tested => throw _privateConstructorUsedError;
 
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initial(bool opened, bool used, bool tested),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function(bool? opened, bool? used, bool? tested) initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(bool opened, bool used, bool tested),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(bool? opened, bool? used, bool? tested)? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialUsageModel value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialUsageModel value) initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialUsageModel value),
-    @required Result orElse(),
-  });
-  Map<String, dynamic> toJson();
-  $UsageModelCopyWith<UsageModel> get copyWith;
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialUsageModel value)? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $UsageModelCopyWith<UsageModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -69,7 +76,7 @@ abstract class $UsageModelCopyWith<$Res> {
   factory $UsageModelCopyWith(
           UsageModel value, $Res Function(UsageModel) then) =
       _$UsageModelCopyWithImpl<$Res>;
-  $Res call({bool opened, bool used, bool tested});
+  $Res call({bool? opened, bool? used, bool? tested});
 }
 
 /// @nodoc
@@ -82,14 +89,23 @@ class _$UsageModelCopyWithImpl<$Res> implements $UsageModelCopyWith<$Res> {
 
   @override
   $Res call({
-    Object opened = freezed,
-    Object used = freezed,
-    Object tested = freezed,
+    Object? opened = freezed,
+    Object? used = freezed,
+    Object? tested = freezed,
   }) {
     return _then(_value.copyWith(
-      opened: opened == freezed ? _value.opened : opened as bool,
-      used: used == freezed ? _value.used : used as bool,
-      tested: tested == freezed ? _value.tested : tested as bool,
+      opened: opened == freezed
+          ? _value.opened
+          : opened // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      used: used == freezed
+          ? _value.used
+          : used // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      tested: tested == freezed
+          ? _value.tested
+          : tested // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -101,7 +117,7 @@ abstract class _$InitialUsageModelCopyWith<$Res>
           _InitialUsageModel value, $Res Function(_InitialUsageModel) then) =
       __$InitialUsageModelCopyWithImpl<$Res>;
   @override
-  $Res call({bool opened, bool used, bool tested});
+  $Res call({bool? opened, bool? used, bool? tested});
 }
 
 /// @nodoc
@@ -117,14 +133,23 @@ class __$InitialUsageModelCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object opened = freezed,
-    Object used = freezed,
-    Object tested = freezed,
+    Object? opened = freezed,
+    Object? used = freezed,
+    Object? tested = freezed,
   }) {
     return _then(_InitialUsageModel(
-      opened: opened == freezed ? _value.opened : opened as bool,
-      used: used == freezed ? _value.used : used as bool,
-      tested: tested == freezed ? _value.tested : tested as bool,
+      opened: opened == freezed
+          ? _value.opened
+          : opened // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      used: used == freezed
+          ? _value.used
+          : used // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      tested: tested == freezed
+          ? _value.tested
+          : tested // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -132,26 +157,22 @@ class __$InitialUsageModelCopyWithImpl<$Res>
 @JsonSerializable()
 
 /// @nodoc
-class _$_InitialUsageModel extends _InitialUsageModel {
+class _$_InitialUsageModel implements _InitialUsageModel {
   _$_InitialUsageModel(
-      {this.opened = false, this.used = false, this.tested = false})
-      : assert(opened != null),
-        assert(used != null),
-        assert(tested != null),
-        super._();
+      {this.opened = false, this.used = false, this.tested = false});
 
   factory _$_InitialUsageModel.fromJson(Map<String, dynamic> json) =>
       _$_$_InitialUsageModelFromJson(json);
 
   @JsonKey(defaultValue: false)
   @override
-  final bool opened;
+  final bool? opened;
   @JsonKey(defaultValue: false)
   @override
-  final bool used;
+  final bool? used;
   @JsonKey(defaultValue: false)
   @override
-  final bool tested;
+  final bool? tested;
 
   @override
   String toString() {
@@ -177,26 +198,25 @@ class _$_InitialUsageModel extends _InitialUsageModel {
       const DeepCollectionEquality().hash(used) ^
       const DeepCollectionEquality().hash(tested);
 
+  @JsonKey(ignore: true)
   @override
   _$InitialUsageModelCopyWith<_InitialUsageModel> get copyWith =>
       __$InitialUsageModelCopyWithImpl<_InitialUsageModel>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initial(bool opened, bool used, bool tested),
+  TResult when<TResult extends Object?>({
+    required TResult Function(bool? opened, bool? used, bool? tested) initial,
   }) {
-    assert(initial != null);
     return initial(opened, used, tested);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(bool opened, bool used, bool tested),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(bool? opened, bool? used, bool? tested)? initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(opened, used, tested);
     }
@@ -205,20 +225,18 @@ class _$_InitialUsageModel extends _InitialUsageModel {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_InitialUsageModel value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialUsageModel value) initial,
   }) {
-    assert(initial != null);
     return initial(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_InitialUsageModel value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialUsageModel value)? initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(this);
     }
@@ -231,20 +249,21 @@ class _$_InitialUsageModel extends _InitialUsageModel {
   }
 }
 
-abstract class _InitialUsageModel extends UsageModel {
-  _InitialUsageModel._() : super._();
-  factory _InitialUsageModel({bool opened, bool used, bool tested}) =
+abstract class _InitialUsageModel implements UsageModel {
+  factory _InitialUsageModel({bool? opened, bool? used, bool? tested}) =
       _$_InitialUsageModel;
 
   factory _InitialUsageModel.fromJson(Map<String, dynamic> json) =
       _$_InitialUsageModel.fromJson;
 
   @override
-  bool get opened;
+  bool? get opened => throw _privateConstructorUsedError;
   @override
-  bool get used;
+  bool? get used => throw _privateConstructorUsedError;
   @override
-  bool get tested;
+  bool? get tested => throw _privateConstructorUsedError;
   @override
-  _$InitialUsageModelCopyWith<_InitialUsageModel> get copyWith;
+  @JsonKey(ignore: true)
+  _$InitialUsageModelCopyWith<_InitialUsageModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }

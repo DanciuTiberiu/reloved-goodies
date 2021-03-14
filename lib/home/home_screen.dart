@@ -106,7 +106,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Stack(
             children: [
               widget.child,
-              if (state.homeState.showSubcategory.contains(true))
+              if (state.homeState!.showSubcategory!.contains(true))
                 Container(
                   color: AppColors.burgundy,
                   width: MediaQuery.of(context).size.width / 8,
@@ -180,7 +180,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(
               child: Text(
                 (Categories().getCategoryElements()[state
-                        .homeState.showSubcategory
+                        .homeState!.showSubcategory!
                         .indexWhere((element) => element == true)])
                     .getCategoryElements()[index]
                     .toUpperCase(),

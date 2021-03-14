@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'create_advert_state.dart';
 
@@ -9,20 +9,15 @@ part of 'create_advert_state.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 /// @nodoc
 class _$CreateAdvertStateTearOff {
   const _$CreateAdvertStateTearOff();
 
-// ignore: unused_element
-  _CreateAdvertState call({AdvertModel newAdvert}) {
-    return _CreateAdvertState(
-      newAdvert: newAdvert,
-    );
-  }
-
-// ignore: unused_element
   _InitialCreateAdvertState initial(
-      {AdvertModel newAdvert = const AdvertModel.initial()}) {
+      {AdvertModel? newAdvert = const AdvertModel.initial()}) {
     return _InitialCreateAdvertState(
       newAdvert: newAdvert,
     );
@@ -30,37 +25,38 @@ class _$CreateAdvertStateTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $CreateAdvertState = _$CreateAdvertStateTearOff();
 
 /// @nodoc
 mixin _$CreateAdvertState {
-  AdvertModel get newAdvert;
+  AdvertModel? get newAdvert => throw _privateConstructorUsedError;
 
   @optionalTypeArgs
-  Result when<Result extends Object>(
-    Result $default(AdvertModel newAdvert), {
-    @required Result initial(AdvertModel newAdvert),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function(AdvertModel? newAdvert) initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>(
-    Result $default(AdvertModel newAdvert), {
-    Result initial(AdvertModel newAdvert),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(AdvertModel? newAdvert)? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>(
-    Result $default(_CreateAdvertState value), {
-    @required Result initial(_InitialCreateAdvertState value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialCreateAdvertState value) initial,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>(
-    Result $default(_CreateAdvertState value), {
-    Result initial(_InitialCreateAdvertState value),
-    @required Result orElse(),
-  });
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialCreateAdvertState value)? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 
-  $CreateAdvertStateCopyWith<CreateAdvertState> get copyWith;
+  @JsonKey(ignore: true)
+  $CreateAdvertStateCopyWith<CreateAdvertState> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -68,9 +64,9 @@ abstract class $CreateAdvertStateCopyWith<$Res> {
   factory $CreateAdvertStateCopyWith(
           CreateAdvertState value, $Res Function(CreateAdvertState) then) =
       _$CreateAdvertStateCopyWithImpl<$Res>;
-  $Res call({AdvertModel newAdvert});
+  $Res call({AdvertModel? newAdvert});
 
-  $AdvertModelCopyWith<$Res> get newAdvert;
+  $AdvertModelCopyWith<$Res>? get newAdvert;
 }
 
 /// @nodoc
@@ -84,147 +80,26 @@ class _$CreateAdvertStateCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object newAdvert = freezed,
+    Object? newAdvert = freezed,
   }) {
     return _then(_value.copyWith(
-      newAdvert:
-          newAdvert == freezed ? _value.newAdvert : newAdvert as AdvertModel,
+      newAdvert: newAdvert == freezed
+          ? _value.newAdvert
+          : newAdvert // ignore: cast_nullable_to_non_nullable
+              as AdvertModel?,
     ));
   }
 
   @override
-  $AdvertModelCopyWith<$Res> get newAdvert {
+  $AdvertModelCopyWith<$Res>? get newAdvert {
     if (_value.newAdvert == null) {
       return null;
     }
-    return $AdvertModelCopyWith<$Res>(_value.newAdvert, (value) {
+
+    return $AdvertModelCopyWith<$Res>(_value.newAdvert!, (value) {
       return _then(_value.copyWith(newAdvert: value));
     });
   }
-}
-
-/// @nodoc
-abstract class _$CreateAdvertStateCopyWith<$Res>
-    implements $CreateAdvertStateCopyWith<$Res> {
-  factory _$CreateAdvertStateCopyWith(
-          _CreateAdvertState value, $Res Function(_CreateAdvertState) then) =
-      __$CreateAdvertStateCopyWithImpl<$Res>;
-  @override
-  $Res call({AdvertModel newAdvert});
-
-  @override
-  $AdvertModelCopyWith<$Res> get newAdvert;
-}
-
-/// @nodoc
-class __$CreateAdvertStateCopyWithImpl<$Res>
-    extends _$CreateAdvertStateCopyWithImpl<$Res>
-    implements _$CreateAdvertStateCopyWith<$Res> {
-  __$CreateAdvertStateCopyWithImpl(
-      _CreateAdvertState _value, $Res Function(_CreateAdvertState) _then)
-      : super(_value, (v) => _then(v as _CreateAdvertState));
-
-  @override
-  _CreateAdvertState get _value => super._value as _CreateAdvertState;
-
-  @override
-  $Res call({
-    Object newAdvert = freezed,
-  }) {
-    return _then(_CreateAdvertState(
-      newAdvert:
-          newAdvert == freezed ? _value.newAdvert : newAdvert as AdvertModel,
-    ));
-  }
-}
-
-/// @nodoc
-class _$_CreateAdvertState implements _CreateAdvertState {
-  _$_CreateAdvertState({this.newAdvert});
-
-  @override
-  final AdvertModel newAdvert;
-
-  @override
-  String toString() {
-    return 'CreateAdvertState(newAdvert: $newAdvert)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other is _CreateAdvertState &&
-            (identical(other.newAdvert, newAdvert) ||
-                const DeepCollectionEquality()
-                    .equals(other.newAdvert, newAdvert)));
-  }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(newAdvert);
-
-  @override
-  _$CreateAdvertStateCopyWith<_CreateAdvertState> get copyWith =>
-      __$CreateAdvertStateCopyWithImpl<_CreateAdvertState>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  Result when<Result extends Object>(
-    Result $default(AdvertModel newAdvert), {
-    @required Result initial(AdvertModel newAdvert),
-  }) {
-    assert($default != null);
-    assert(initial != null);
-    return $default(newAdvert);
-  }
-
-  @override
-  @optionalTypeArgs
-  Result maybeWhen<Result extends Object>(
-    Result $default(AdvertModel newAdvert), {
-    Result initial(AdvertModel newAdvert),
-    @required Result orElse(),
-  }) {
-    assert(orElse != null);
-    if ($default != null) {
-      return $default(newAdvert);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  Result map<Result extends Object>(
-    Result $default(_CreateAdvertState value), {
-    @required Result initial(_InitialCreateAdvertState value),
-  }) {
-    assert($default != null);
-    assert(initial != null);
-    return $default(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  Result maybeMap<Result extends Object>(
-    Result $default(_CreateAdvertState value), {
-    Result initial(_InitialCreateAdvertState value),
-    @required Result orElse(),
-  }) {
-    assert(orElse != null);
-    if ($default != null) {
-      return $default(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _CreateAdvertState implements CreateAdvertState {
-  factory _CreateAdvertState({AdvertModel newAdvert}) = _$_CreateAdvertState;
-
-  @override
-  AdvertModel get newAdvert;
-  @override
-  _$CreateAdvertStateCopyWith<_CreateAdvertState> get copyWith;
 }
 
 /// @nodoc
@@ -234,10 +109,10 @@ abstract class _$InitialCreateAdvertStateCopyWith<$Res>
           $Res Function(_InitialCreateAdvertState) then) =
       __$InitialCreateAdvertStateCopyWithImpl<$Res>;
   @override
-  $Res call({AdvertModel newAdvert});
+  $Res call({AdvertModel? newAdvert});
 
   @override
-  $AdvertModelCopyWith<$Res> get newAdvert;
+  $AdvertModelCopyWith<$Res>? get newAdvert;
 }
 
 /// @nodoc
@@ -254,11 +129,13 @@ class __$InitialCreateAdvertStateCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object newAdvert = freezed,
+    Object? newAdvert = freezed,
   }) {
     return _then(_InitialCreateAdvertState(
-      newAdvert:
-          newAdvert == freezed ? _value.newAdvert : newAdvert as AdvertModel,
+      newAdvert: newAdvert == freezed
+          ? _value.newAdvert
+          : newAdvert // ignore: cast_nullable_to_non_nullable
+              as AdvertModel?,
     ));
   }
 }
@@ -266,12 +143,11 @@ class __$InitialCreateAdvertStateCopyWithImpl<$Res>
 /// @nodoc
 class _$_InitialCreateAdvertState implements _InitialCreateAdvertState {
   const _$_InitialCreateAdvertState(
-      {this.newAdvert = const AdvertModel.initial()})
-      : assert(newAdvert != null);
+      {this.newAdvert = const AdvertModel.initial()});
 
   @JsonKey(defaultValue: const AdvertModel.initial())
   @override
-  final AdvertModel newAdvert;
+  final AdvertModel? newAdvert;
 
   @override
   String toString() {
@@ -291,6 +167,7 @@ class _$_InitialCreateAdvertState implements _InitialCreateAdvertState {
   int get hashCode =>
       runtimeType.hashCode ^ const DeepCollectionEquality().hash(newAdvert);
 
+  @JsonKey(ignore: true)
   @override
   _$InitialCreateAdvertStateCopyWith<_InitialCreateAdvertState> get copyWith =>
       __$InitialCreateAdvertStateCopyWithImpl<_InitialCreateAdvertState>(
@@ -298,23 +175,18 @@ class _$_InitialCreateAdvertState implements _InitialCreateAdvertState {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>(
-    Result $default(AdvertModel newAdvert), {
-    @required Result initial(AdvertModel newAdvert),
+  TResult when<TResult extends Object?>({
+    required TResult Function(AdvertModel? newAdvert) initial,
   }) {
-    assert($default != null);
-    assert(initial != null);
     return initial(newAdvert);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>(
-    Result $default(AdvertModel newAdvert), {
-    Result initial(AdvertModel newAdvert),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(AdvertModel? newAdvert)? initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(newAdvert);
     }
@@ -323,23 +195,18 @@ class _$_InitialCreateAdvertState implements _InitialCreateAdvertState {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>(
-    Result $default(_CreateAdvertState value), {
-    @required Result initial(_InitialCreateAdvertState value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialCreateAdvertState value) initial,
   }) {
-    assert($default != null);
-    assert(initial != null);
     return initial(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>(
-    Result $default(_CreateAdvertState value), {
-    Result initial(_InitialCreateAdvertState value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialCreateAdvertState value)? initial,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(this);
     }
@@ -348,11 +215,13 @@ class _$_InitialCreateAdvertState implements _InitialCreateAdvertState {
 }
 
 abstract class _InitialCreateAdvertState implements CreateAdvertState {
-  const factory _InitialCreateAdvertState({AdvertModel newAdvert}) =
+  const factory _InitialCreateAdvertState({AdvertModel? newAdvert}) =
       _$_InitialCreateAdvertState;
 
   @override
-  AdvertModel get newAdvert;
+  AdvertModel? get newAdvert => throw _privateConstructorUsedError;
   @override
-  _$InitialCreateAdvertStateCopyWith<_InitialCreateAdvertState> get copyWith;
+  @JsonKey(ignore: true)
+  _$InitialCreateAdvertStateCopyWith<_InitialCreateAdvertState> get copyWith =>
+      throw _privateConstructorUsedError;
 }
