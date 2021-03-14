@@ -26,7 +26,7 @@ part 'user_model.g.dart';
   @JsonKey(ignore: true)
   Map<String, dynamic> mapToJson() {
     return {
-      'userSharedInfo': this.userSharedInfo!.toJson(),
+      'userSharedInfo': this.userSharedInfo?.toJson(),
       'reviewScore': this.reviewScore,
       'city': this.city,
       'photo': this.photo,

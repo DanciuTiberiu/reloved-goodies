@@ -32,10 +32,10 @@ part 'data_model.g.dart';
     return {
       'title': this.title,
       'description': this.description,
-      'usage': this.usage!.toJson(),
+      'usage': this.usage?.toJson(),
       'openDate': this.openDate,
       'expirationDate': this.expirationDate,
-      'price': this.price!.toJson(),
+      'price': this.price?.toJson(),
     };
   }
 }

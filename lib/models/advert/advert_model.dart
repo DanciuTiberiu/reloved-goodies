@@ -27,10 +27,10 @@ part 'advert_model.g.dart';
   Map<String, dynamic> mapToJson() {
     return {
       'advertId': this.advertId,
-      'info': this.info!.toJson(),
-      'data': this.data!.toJson(),
-      'delivery': this.delivery!.toJson(),
-      'seller': this.seller!.toJson(),
+      'info': this.info?.toJson(),
+      'data': this.data?.toJson(),
+      'delivery': this.delivery?.toJson(),
+      'seller': this.seller?.toJson(),
     };
   }
 }

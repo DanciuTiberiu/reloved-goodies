@@ -21,8 +21,8 @@ part 'seller_model.g.dart';
   @JsonKey(ignore: true)
   Map<String, dynamic> mapToJson() {
     return {
-      'contactWays': this.contactWays!.toJson(),
-      'userSharedInfo': this.userSharedInfo!.toJson(),
+      'contactWays': this.contactWays?.toJson(),
+      'userSharedInfo': this.userSharedInfo?.toJson(),
     };
   }
 }
