@@ -5,7 +5,7 @@ part 'contact_ways_model.freezed.dart';
 part 'contact_ways_model.g.dart';
 
 @freezed
-abstract class ContactWaysModel implements _$ContactWaysModel {
+ class ContactWaysModel with _$ContactWaysModel {
 
   factory ContactWaysModel.initial({
     @Default(true) bool? phone,

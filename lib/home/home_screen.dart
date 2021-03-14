@@ -119,7 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           children: [
                             ListView.builder(
                               itemCount: (Categories().getCategoryElements()[
-                                      state.homeState.showSubcategory
+                                      state.homeState!.showSubcategory!
                                           .indexWhere(
                                               (element) => element == true)])
                                   .getCategoryElements()

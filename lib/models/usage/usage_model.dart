@@ -5,7 +5,7 @@ part 'usage_model.freezed.dart';
 part 'usage_model.g.dart';
 
 @freezed
-abstract class UsageModel implements _$UsageModel {
+ class UsageModel with _$UsageModel {
 
   factory UsageModel.initial({
     @Default(false) bool? opened,

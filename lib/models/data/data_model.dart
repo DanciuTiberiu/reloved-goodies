@@ -9,7 +9,7 @@ part 'data_model.freezed.dart';
 part 'data_model.g.dart';
 
 @freezed
-abstract class ProductDataModel implements _$ProductDataModel {
+ class ProductDataModel with _$ProductDataModel {
 
   factory ProductDataModel.initial({
     @Default('') String? title,
@@ -29,10 +29,10 @@ abstract class ProductDataModel implements _$ProductDataModel {
     return {
       'title': this.title,
       'description': this.description,
-      'usage': this.usage.toJson(),
+      'usage': this.usage!.toJson(),
       'openDate': this.openDate,
       'expirationDate': this.expirationDate,
-      'price': this.price.toJson(),
+      'price': this.price!.toJson(),
     };
   }
 }

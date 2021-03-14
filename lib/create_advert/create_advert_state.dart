@@ -4,7 +4,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'create_advert_state.freezed.dart';
 
 @freezed
-abstract class CreateAdvertState with _$CreateAdvertState {
+ class CreateAdvertState with _$CreateAdvertState {
 
   const factory CreateAdvertState.initial({
     @Default(AdvertModel.initial()) AdvertModel? newAdvert,

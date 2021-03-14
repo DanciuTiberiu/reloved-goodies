@@ -5,7 +5,7 @@ part 'delivery_model.freezed.dart';
 part 'delivery_model.g.dart';
 
 @freezed
-abstract class DeliveryModel implements _$DeliveryModel {
+ class DeliveryModel with _$DeliveryModel {
 
   factory DeliveryModel.initial({
     @Default(true) bool? personalService,
