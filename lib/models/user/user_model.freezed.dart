@@ -228,14 +228,15 @@ class __$InitialUserModelCopyWithImpl<$Res>
 @JsonSerializable()
 
 /// @nodoc
-class _$_InitialUserModel implements _InitialUserModel {
+class _$_InitialUserModel extends _InitialUserModel {
   _$_InitialUserModel(
       {this.userSharedInfo,
       this.reviewScore = '',
       this.city = '',
       this.photo = '',
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-          this.birthday});
+          this.birthday})
+      : super._();
 
   factory _$_InitialUserModel.fromJson(Map<String, dynamic> json) =>
       _$_$_InitialUserModelFromJson(json);
@@ -353,7 +354,7 @@ class _$_InitialUserModel implements _InitialUserModel {
   }
 }
 
-abstract class _InitialUserModel implements UserModel {
+abstract class _InitialUserModel extends UserModel {
   factory _InitialUserModel(
       {UserSharedInfoModel? userSharedInfo,
       String? reviewScore,
@@ -361,6 +362,7 @@ abstract class _InitialUserModel implements UserModel {
       String? photo,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
           DateTime? birthday}) = _$_InitialUserModel;
+  _InitialUserModel._() : super._();
 
   factory _InitialUserModel.fromJson(Map<String, dynamic> json) =
       _$_InitialUserModel.fromJson;

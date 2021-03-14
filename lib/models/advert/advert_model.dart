@@ -10,6 +10,7 @@ part 'advert_model.g.dart';
 
 @freezed
  class AdvertModel with _$AdvertModel {
+  const AdvertModel._();
 
   const factory AdvertModel.initial({
     @Default('') String? advertId,
@@ -22,6 +23,7 @@ part 'advert_model.g.dart';
   factory AdvertModel.fromJson(Map<String, dynamic> json) =>
       _$AdvertModelFromJson(json);
 
+  @JsonKey(ignore: true)
   Map<String, dynamic> mapToJson() {
     return {
       'advertId': this.advertId,

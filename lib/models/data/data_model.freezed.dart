@@ -268,7 +268,7 @@ class __$InitialProductDataModelCopyWithImpl<$Res>
 @JsonSerializable()
 
 /// @nodoc
-class _$_InitialProductDataModel implements _InitialProductDataModel {
+class _$_InitialProductDataModel extends _InitialProductDataModel {
   _$_InitialProductDataModel(
       {this.title = '',
       this.description = '',
@@ -277,7 +277,8 @@ class _$_InitialProductDataModel implements _InitialProductDataModel {
           this.openDate,
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
           this.expirationDate,
-      this.price});
+      this.price})
+      : super._();
 
   factory _$_InitialProductDataModel.fromJson(Map<String, dynamic> json) =>
       _$_$_InitialProductDataModelFromJson(json);
@@ -406,7 +407,7 @@ class _$_InitialProductDataModel implements _InitialProductDataModel {
   }
 }
 
-abstract class _InitialProductDataModel implements ProductDataModel {
+abstract class _InitialProductDataModel extends ProductDataModel {
   factory _InitialProductDataModel(
       {String? title,
       String? description,
@@ -416,6 +417,7 @@ abstract class _InitialProductDataModel implements ProductDataModel {
       @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
           DateTime? expirationDate,
       PriceModel? price}) = _$_InitialProductDataModel;
+  _InitialProductDataModel._() : super._();
 
   factory _InitialProductDataModel.fromJson(Map<String, dynamic> json) =
       _$_InitialProductDataModel.fromJson;

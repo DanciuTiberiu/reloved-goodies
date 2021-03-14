@@ -261,9 +261,10 @@ class __$InitialAdvertModelCopyWithImpl<$Res>
 @JsonSerializable()
 
 /// @nodoc
-class _$_InitialAdvertModel implements _InitialAdvertModel {
+class _$_InitialAdvertModel extends _InitialAdvertModel {
   const _$_InitialAdvertModel(
-      {this.advertId = '', this.info, this.data, this.delivery, this.seller});
+      {this.advertId = '', this.info, this.data, this.delivery, this.seller})
+      : super._();
 
   factory _$_InitialAdvertModel.fromJson(Map<String, dynamic> json) =>
       _$_$_InitialAdvertModelFromJson(json);
@@ -371,13 +372,14 @@ class _$_InitialAdvertModel implements _InitialAdvertModel {
   }
 }
 
-abstract class _InitialAdvertModel implements AdvertModel {
+abstract class _InitialAdvertModel extends AdvertModel {
   const factory _InitialAdvertModel(
       {String? advertId,
       InfoModel? info,
       ProductDataModel? data,
       DeliveryModel? delivery,
       SellerModel? seller}) = _$_InitialAdvertModel;
+  const _InitialAdvertModel._() : super._();
 
   factory _InitialAdvertModel.fromJson(Map<String, dynamic> json) =
       _$_InitialAdvertModel.fromJson;

@@ -11,6 +11,8 @@ part 'data_model.g.dart';
 @freezed
  class ProductDataModel with _$ProductDataModel {
 
+  const ProductDataModel._();
+
   factory ProductDataModel.initial({
     @Default('') String? title,
     @Default('') String? description,
@@ -25,6 +27,7 @@ part 'data_model.g.dart';
   factory ProductDataModel.fromJson(Map<String, dynamic> json) =>
       _$ProductDataModelFromJson(json);
 
+  @JsonKey(ignore: true)
   Map<String, dynamic> mapToJson() {
     return {
       'title': this.title,

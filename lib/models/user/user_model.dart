@@ -9,6 +9,7 @@ part 'user_model.g.dart';
 
 @freezed
  class UserModel with _$UserModel {
+  UserModel._();
 
   factory UserModel.initial({
     UserSharedInfoModel? userSharedInfo,
@@ -22,6 +23,7 @@ part 'user_model.g.dart';
   factory UserModel.fromJson(Map<String, dynamic> json) =>
       _$UserModelFromJson(json);
 
+  @JsonKey(ignore: true)
   Map<String, dynamic> mapToJson() {
     return {
       'userSharedInfo': this.userSharedInfo!.toJson(),

@@ -181,8 +181,8 @@ class __$InitialSellerModelCopyWithImpl<$Res>
 @JsonSerializable()
 
 /// @nodoc
-class _$_InitialSellerModel implements _InitialSellerModel {
-  _$_InitialSellerModel({this.contactWays, this.userSharedInfo});
+class _$_InitialSellerModel extends _InitialSellerModel {
+  _$_InitialSellerModel({this.contactWays, this.userSharedInfo}) : super._();
 
   factory _$_InitialSellerModel.fromJson(Map<String, dynamic> json) =>
       _$_$_InitialSellerModelFromJson(json);
@@ -270,10 +270,11 @@ class _$_InitialSellerModel implements _InitialSellerModel {
   }
 }
 
-abstract class _InitialSellerModel implements SellerModel {
+abstract class _InitialSellerModel extends SellerModel {
   factory _InitialSellerModel(
       {ContactWaysModel? contactWays,
       UserSharedInfoModel? userSharedInfo}) = _$_InitialSellerModel;
+  _InitialSellerModel._() : super._();
 
   factory _InitialSellerModel.fromJson(Map<String, dynamic> json) =
       _$_InitialSellerModel.fromJson;

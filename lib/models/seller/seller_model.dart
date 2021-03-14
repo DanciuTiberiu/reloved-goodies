@@ -8,6 +8,7 @@ part 'seller_model.g.dart';
 
 @freezed
  class SellerModel with _$SellerModel {
+  SellerModel._();
 
   factory SellerModel.initial({
     ContactWaysModel? contactWays,
@@ -17,6 +18,7 @@ part 'seller_model.g.dart';
   factory SellerModel.fromJson(Map<String, dynamic> json) =>
       _$SellerModelFromJson(json);
 
+  @JsonKey(ignore: true)
   Map<String, dynamic> mapToJson() {
     return {
       'contactWays': this.contactWays!.toJson(),

@@ -23,7 +23,7 @@ Map<String, dynamic> _$_$_InitialInfoModelToJson(
     <String, dynamic>{
       'advertNb': instance.advertNb,
       'viewsNb': instance.viewsNb,
-      'date': dateTimeToTimestamp(instance.date),
+      'date': dateTimeToTimestamp(instance.date!),
       'deleted': instance.deleted,
       'active': instance.active,
       'category': instance.category,
