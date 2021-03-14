@@ -23,7 +23,7 @@ class _InfoTabState extends State<InfoTab> {
     Store<AppState> store,
     AppState state,
     Dispatch dispatch,
-    Widget child,
+    Widget? child,
   ) {
     return Container(
       child: Button('Next', () {}),

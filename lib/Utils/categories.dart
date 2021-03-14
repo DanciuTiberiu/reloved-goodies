@@ -7,11 +7,11 @@ abstract class CategoryElement {
 }
 
 class Categories implements CategoryElement {
-  Face face;
-  Eyes eyes;
-  Lips lips;
-  Tools tools;
-  Skincare skincare;
+  Face? face;
+  Eyes? eyes;
+  Lips? lips;
+  Tools? tools;
+  Skincare? skincare;
 
   Categories() {
     this.face = Face();
@@ -27,20 +27,18 @@ class Categories implements CategoryElement {
 }
 
 class Face implements CategoryElement{
-  String primer;
-  String foundation;
-  String concealer;
-  String powder;
-  String blush;
-  String contour;
-  String settingSpray;
-  String bronzer;
-  String highlighter;
-  String palettes;
-  String selfTranslation;
-
-// ignore: non_constant_identifier_names
-  String BBcream;
+  String? primer;
+  String? foundation;
+  String? concealer;
+  String? powder;
+  String? blush;
+  String? contour;
+  String? settingSpray;
+  String? bronzer;
+  String? highlighter;
+  String? palettes;
+  String? selfTranslation;
+  String? bbCream;
 
   Face() {
     this.primer =
@@ -63,7 +61,7 @@ class Face implements CategoryElement{
         translation.textFromMapInsideMap('categories', 'face', 'highlighter');
     this.palettes =
         translation.textFromMapInsideMap('categories', 'face', 'palettes');
-    this.BBcream =
+    this.bbCream =
         translation.textFromMapInsideMap('categories', 'face', 'BBcream');
     this.selfTranslation =
         translation.textFromMapInsideMap('categories', 'face', 'face');
@@ -72,7 +70,7 @@ class Face implements CategoryElement{
   List<dynamic> getCategoryElements() {
     return [
       this.primer,
-      this.BBcream,
+      this.bbCream,
       this.foundation,
       this.concealer,
       this.powder,
@@ -87,15 +85,15 @@ class Face implements CategoryElement{
 }
 
 class Eyes implements CategoryElement {
-  String eyeliner;
-  String mascara;
-  String glitter;
-  String primer;
-  String falseLashes;
-  String eyebrow;
-  String palettes;
-  String eyeshadow;
-  String selfTranslation;
+  String? eyeliner;
+  String? mascara;
+  String? glitter;
+  String? primer;
+  String? falseLashes;
+  String? eyebrow;
+  String? palettes;
+  String? eyeshadow;
+  String? selfTranslation;
 
   Eyes() {
     this.eyeliner =
@@ -135,14 +133,14 @@ class Eyes implements CategoryElement {
 }
 
 class Lips implements CategoryElement{
-  String primer;
-  String liner;
-  String gloss;
-  String lipstick;
-  String liquidLipstick;
-  String glitter;
-  String palettes;
-  String selfTranslation;
+  String? primer;
+  String? liner;
+  String? gloss;
+  String? lipstick;
+  String? liquidLipstick;
+  String? glitter;
+  String? palettes;
+  String? selfTranslation;
 
   Lips() {
     this.gloss =
@@ -178,15 +176,15 @@ class Lips implements CategoryElement{
 }
 
 class Tools implements CategoryElement{
-  String faceBrushes;
-  String eyesBrushes;
-  String lipsBrushes;
-  String eyebrowBrushes;
-  String sponges;
-  String accessories;
-  String brushSet;
-  String cases;
-  String selfTranslation;
+  String? faceBrushes;
+  String? eyesBrushes;
+  String? lipsBrushes;
+  String? eyebrowBrushes;
+  String? sponges;
+  String? accessories;
+  String? brushSet;
+  String? cases;
+  String? selfTranslation;
 
   Tools() {
     this.faceBrushes =
@@ -225,7 +223,7 @@ class Tools implements CategoryElement{
 }
 
 class Skincare implements CategoryElement{
-  String selfTranslation;
+  String? selfTranslation;
 
   Skincare() {
     this.selfTranslation =

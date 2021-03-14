@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class RouteWithoutTransition<T> extends MaterialPageRoute<T> {
-  RouteWithoutTransition({ WidgetBuilder builder, RouteSettings settings })
+  RouteWithoutTransition({ required WidgetBuilder builder, required RouteSettings settings })
       : super(builder: builder, settings: settings);
 
   @override
