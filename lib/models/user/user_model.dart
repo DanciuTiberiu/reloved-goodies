@@ -8,7 +8,7 @@ part 'user_model.freezed.dart';
 part 'user_model.g.dart';
 
 @freezed
-abstract class UserModel implements _$UserModel {
+ class UserModel with _$UserModel {
 
   factory UserModel.initial({
     UserSharedInfoModel? userSharedInfo,
@@ -24,7 +24,7 @@ abstract class UserModel implements _$UserModel {
 
   Map<String, dynamic> mapToJson() {
     return {
-      'userSharedInfo': this.userSharedInfo.toJson(),
+      'userSharedInfo': this.userSharedInfo!.toJson(),
       'reviewScore': this.reviewScore,
       'city': this.city,
       'photo': this.photo,

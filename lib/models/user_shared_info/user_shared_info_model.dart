@@ -5,7 +5,7 @@ part 'user_shared_info_model.freezed.dart';
 part 'user_shared_info_model.g.dart';
 
 @freezed
-abstract class UserSharedInfoModel implements _$UserSharedInfoModel {
+ class UserSharedInfoModel with _$UserSharedInfoModel {
 
   factory UserSharedInfoModel.initial({
     @Default('') String? firstName,

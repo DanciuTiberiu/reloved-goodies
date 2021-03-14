@@ -9,7 +9,7 @@ part 'advert_model.freezed.dart';
 part 'advert_model.g.dart';
 
 @freezed
-abstract class AdvertModel implements _$AdvertModel {
+ class AdvertModel with _$AdvertModel {
 
   const factory AdvertModel.initial({
     @Default('') String? advertId,
@@ -28,7 +28,7 @@ abstract class AdvertModel implements _$AdvertModel {
       'info': this.info!.toJson(),
       'data': this.data!.toJson(),
       'delivery': this.delivery!.toJson(),
-      'seller': this.seller.toJson(),
+      'seller': this.seller!.toJson(),
     };
   }
 }

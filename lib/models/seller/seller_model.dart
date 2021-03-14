@@ -7,7 +7,7 @@ part 'seller_model.freezed.dart';
 part 'seller_model.g.dart';
 
 @freezed
-abstract class SellerModel implements _$SellerModel {
+ class SellerModel with _$SellerModel {
 
   factory SellerModel.initial({
     ContactWaysModel? contactWays,
@@ -19,8 +19,8 @@ abstract class SellerModel implements _$SellerModel {
 
   Map<String, dynamic> mapToJson() {
     return {
-      'contactWays': this.contactWays.toJson(),
-      'userSharedInfo': this.userSharedInfo.toJson(),
+      'contactWays': this.contactWays!.toJson(),
+      'userSharedInfo': this.userSharedInfo!.toJson(),
     };
   }
 }

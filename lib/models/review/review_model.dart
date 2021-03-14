@@ -5,7 +5,7 @@ part 'review_model.freezed.dart';
 part 'review_model.g.dart';
 
 @freezed
-abstract class ReviewModel implements _$ReviewModel {
+ class ReviewModel with _$ReviewModel {
 
   factory ReviewModel.initial({
     @Default(0) int? starsNb,

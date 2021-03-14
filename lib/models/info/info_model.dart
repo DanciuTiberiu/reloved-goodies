@@ -7,7 +7,7 @@ part 'info_model.freezed.dart';
 part 'info_model.g.dart';
 
 @freezed
-abstract class InfoModel implements _$InfoModel {
+ class InfoModel with _$InfoModel {
 
   factory InfoModel.initial({
     @Default(0) int? advertNb,
