@@ -6,12 +6,11 @@ part 'contact_ways_model.g.dart';
 
 @freezed
 abstract class ContactWaysModel implements _$ContactWaysModel {
-  const ContactWaysModel._();
 
   factory ContactWaysModel.initial({
-    @Default(true) bool phone,
-    @Default(true) bool email,
-    @Default(true) bool chat,
+    @Default(true) bool? phone,
+    @Default(true) bool? email,
+    @Default(true) bool? chat,
   }) = _InitialContactWaysModel;
 
   factory ContactWaysModel.fromJson(Map<String, dynamic> json) =>

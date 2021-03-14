@@ -10,17 +10,16 @@ part 'data_model.g.dart';
 
 @freezed
 abstract class ProductDataModel implements _$ProductDataModel {
-  const ProductDataModel._();
 
   factory ProductDataModel.initial({
-    @Default('') String title,
-    @Default('') String description,
-    UsageModel usage,
+    @Default('') String? title,
+    @Default('') String? description,
+    UsageModel? usage,
     @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-        DateTime openDate,
+        DateTime? openDate,
     @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-        DateTime expirationDate,
-    PriceModel price,
+        DateTime? expirationDate,
+    PriceModel? price,
   }) = _InitialProductDataModel;
 
   factory ProductDataModel.fromJson(Map<String, dynamic> json) =>

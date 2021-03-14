@@ -8,11 +8,10 @@ part 'seller_model.g.dart';
 
 @freezed
 abstract class SellerModel implements _$SellerModel {
-  const SellerModel._();
 
   factory SellerModel.initial({
-    ContactWaysModel contactWays,
-    UserSharedInfoModel userSharedInfo,
+    ContactWaysModel? contactWays,
+    UserSharedInfoModel? userSharedInfo,
   }) = _InitialSellerModel;
 
   factory SellerModel.fromJson(Map<String, dynamic> json) =>

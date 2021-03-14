@@ -6,13 +6,8 @@ part 'appstate.freezed.dart';
 
 @freezed
 abstract class AppState with _$AppState {
-  factory AppState({
-    HomeState homeState,
-    CreateAdvertState addAdvertState,
-  }) = _AppState;
-
   factory AppState.initial({
-    @Default(HomeState.initial()) HomeState homeState,
-    @Default(CreateAdvertState.initial()) CreateAdvertState createAdvertState,
+    @Default(HomeState.initial()) HomeState? homeState,
+    @Default(CreateAdvertState.initial()) CreateAdvertState? createAdvertState,
   }) = _InitialAppState;
 }

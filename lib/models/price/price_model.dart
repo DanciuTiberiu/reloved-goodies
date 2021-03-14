@@ -6,12 +6,11 @@ part 'price_model.g.dart';
 
 @freezed
 abstract class PriceModel with _$PriceModel {
-  const PriceModel._();
 
   factory PriceModel.initial({
-    @Default('') String value,
-    @Default(false) bool free,
-    @Default(false) bool negotiable,
+    @Default('') String? value,
+    @Default(false) bool? free,
+    @Default(false) bool? negotiable,
   }) = _InitialPriceModel;
 
   factory PriceModel.fromJson(Map<String, dynamic> json) =>

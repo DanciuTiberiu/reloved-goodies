@@ -10,14 +10,13 @@ part 'advert_model.g.dart';
 
 @freezed
 abstract class AdvertModel implements _$AdvertModel {
-  const AdvertModel._();
 
   const factory AdvertModel.initial({
-    @Default('') String advertId,
-    InfoModel info,
-    ProductDataModel data,
-    DeliveryModel delivery,
-    SellerModel seller,
+    @Default('') String? advertId,
+    InfoModel? info,
+    ProductDataModel? data,
+    DeliveryModel? delivery,
+    SellerModel? seller,
   }) = _InitialAdvertModel;
 
   factory AdvertModel.fromJson(Map<String, dynamic> json) =>
