@@ -9,13 +9,12 @@ part 'user_model.g.dart';
 
 @freezed
 abstract class UserModel implements _$UserModel {
-  const UserModel._();
 
   factory UserModel.initial({
     UserSharedInfoModel userSharedInfo,
-    @Default('') String reviewScore,
-    @Default('') String city,
-    @Default('') String photo,
+    @Default('') String? reviewScore,
+    @Default('') String? city,
+    @Default('') String? photo,
     @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
         DateTime birthday,
   }) = _InitialUserModel;

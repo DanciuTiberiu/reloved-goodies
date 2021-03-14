@@ -8,17 +8,16 @@ part 'info_model.g.dart';
 
 @freezed
 abstract class InfoModel implements _$InfoModel {
-  const InfoModel._();
 
   factory InfoModel.initial({
-    @Default(0) int advertNb,
-    @Default(0) int viewsNb,
+    @Default(0) int? advertNb,
+    @Default(0) int? viewsNb,
     @JsonKey(fromJson: dateTimeFromTimestamp, toJson: dateTimeToTimestamp)
-        DateTime date,
-    @Default(false) bool deleted,
-    @Default(true) bool active,
-    @Default('') String category,
-    @Default('') String subCategory,
+        DateTime? date,
+    @Default(false) bool? deleted,
+    @Default(true) bool? active,
+    @Default('') String? category,
+    @Default('') String? subCategory,
   }) = _InitialInfoModel;
 
   factory InfoModel.fromJson(Map<String, dynamic> json) =>
