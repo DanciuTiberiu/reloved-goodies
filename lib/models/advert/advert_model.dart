@@ -25,9 +25,9 @@ abstract class AdvertModel implements _$AdvertModel {
   Map<String, dynamic> mapToJson() {
     return {
       'advertId': this.advertId,
-      'info': this.info.toJson(),
-      'data': this.data.toJson(),
-      'delivery': this.delivery.toJson(),
+      'info': this.info!.toJson(),
+      'data': this.data!.toJson(),
+      'delivery': this.delivery!.toJson(),
       'seller': this.seller.toJson(),
     };
   }
