@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
   final String name;
-  final Function onPressed;
+  final Function? onPressed;
 
   Button(this.name, this.onPressed);
 
@@ -21,7 +21,7 @@ class Button extends StatelessWidget {
             },
           ),
         ),
-        onPressed: this.onPressed,
+        onPressed: () => this.onPressed,
       ),
     );
   }
