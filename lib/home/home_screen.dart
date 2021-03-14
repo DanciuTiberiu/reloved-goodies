@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
     Store<AppState> store,
     AppState state,
     Dispatch dispatch,
-    Widget child,
+    Widget? child,
   ) {
     return Scaffold(
       body: Column(

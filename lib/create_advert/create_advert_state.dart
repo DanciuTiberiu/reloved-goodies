@@ -5,11 +5,8 @@ part 'create_advert_state.freezed.dart';
 
 @freezed
 abstract class CreateAdvertState with _$CreateAdvertState {
-  factory CreateAdvertState({
-    AdvertModel newAdvert,
-  }) = _CreateAdvertState;
 
   const factory CreateAdvertState.initial({
-    @Default(AdvertModel.initial()) AdvertModel newAdvert,
+    @Default(AdvertModel.initial()) AdvertModel? newAdvert,
   }) = _InitialCreateAdvertState;
 }
