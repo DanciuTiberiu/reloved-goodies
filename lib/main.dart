@@ -1,4 +1,5 @@
-import 'package:ReLovedGoddies/home/home_screen.dart';
+import 'package:ReLovedGoddies/screens/create_advert/create_advert_screen.dart';
+import 'package:ReLovedGoddies/screens/home/home_screen.dart';
 import 'package:async_redux/async_redux.dart';
 import 'package:flutter/material.dart';
 import 'package:provider_for_redux/provider_for_redux.dart';
@@ -6,7 +7,6 @@ import 'package:ReLovedGoddies/Utils/route_without_transition.dart';
 
 import 'Utils/constants.dart';
 import 'Utils/translation.dart';
-import 'create_advert/create_advert_screen.dart';
 import 'redux/appstate.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();

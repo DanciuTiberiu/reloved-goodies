@@ -1,5 +1,6 @@
-import 'package:ReLovedGoddies/create_advert/secondary_screens/info_tab.dart';
+
 import 'package:ReLovedGoddies/redux/appstate.dart';
+import 'package:ReLovedGoddies/screens/create_advert/secondary_screens/info_tab.dart';
 import 'package:async_redux/async_redux.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

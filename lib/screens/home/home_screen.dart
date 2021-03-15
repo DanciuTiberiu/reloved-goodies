@@ -1,7 +1,7 @@
 import 'package:ReLovedGoddies/Utils/categories.dart';
 import 'package:ReLovedGoddies/Utils/constants.dart';
-import 'package:ReLovedGoddies/home/home_actions.dart';
 import 'package:ReLovedGoddies/redux/appstate.dart';
+import 'package:ReLovedGoddies/screens/home/home_actions.dart';
 import 'package:async_redux/async_redux.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

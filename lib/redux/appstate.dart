@@ -1,5 +1,5 @@
-import 'package:ReLovedGoddies/create_advert/create_advert_state.dart';
-import 'package:ReLovedGoddies/home/home_state.dart';
+import 'package:ReLovedGoddies/screens/create_advert/create_advert_state.dart';
+import 'package:ReLovedGoddies/screens/home/home_state.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'appstate.freezed.dart';
