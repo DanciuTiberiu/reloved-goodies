@@ -18,4 +18,5 @@ class AllCategories {
 
 class Routes {
   static const String createAdvertScreen = '/create_advert';
+  static const String authScreen = '/auth_screen';
 }

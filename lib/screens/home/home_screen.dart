@@ -8,8 +8,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:provider_for_redux/provider_for_redux.dart';
 
+import 'app_bar.dart';
+
 class HomeScreen extends StatefulWidget {
-  Widget child;
+  final Widget child;
 
   HomeScreen(this.child);
 
@@ -33,54 +35,10 @@ class _HomeScreenState extends State<HomeScreen> {
     Widget? child,
   ) {
     return Scaffold(
+      appBar: RelovedGoodiesAppBar(),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            height: 100,
-            width: MediaQuery.of(context).size.width,
-            color: AppColors.cooper,
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Expanded(
-                  child: Text(
-                    "Reloved Goodies",
-                    style: TextStyle(
-                        fontSize: 25,
-                        fontStyle: FontStyle.italic,
-                        color: Colors.white),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-                Container(
-                    width: 100,
-                    child: IconButton(
-                        padding: EdgeInsets.zero,
-                        icon: Icon(
-                          Icons.account_circle,
-                          size: 45,
-                          color: Colors.white,
-                        ),
-                        onPressed: () {})),
-                Container(
-                    width: 100,
-                    child: IconButton(
-                        padding: EdgeInsets.zero,
-                        icon: Icon(
-                          Icons.add_rounded,
-                          size: 45,
-                          color: Colors.white,
-                        ),
-                        onPressed: () {
-                          dispatch(
-                              NavigateAction<AppState>.pushReplacementNamed(
-                                  Routes.createAdvertScreen));
-                        }))
-              ],
-            ),
-          ),
           Container(
               height: 50,
               width: MediaQuery.of(context).size.width,

@@ -1,3 +1,5 @@
+import 'package:ReLovedGoddies/redux/initialize_store.dart';
+import 'package:ReLovedGoddies/screens/auth/auth_screen.dart';
 import 'package:ReLovedGoddies/screens/create_advert/create_advert_screen.dart';
 import 'package:ReLovedGoddies/screens/home/home_screen.dart';
 import 'package:async_redux/async_redux.dart';
@@ -12,9 +14,6 @@ import 'redux/appstate.dart';
 final navigatorKey = GlobalKey<NavigatorState>();
 
 void main() async {
-  final Store<AppState> store = Store(
-    initialState: AppState.initial(),
-  );
 
   await translation.init();
   NavigateAction.setNavigatorKey(navigatorKey);
@@ -49,6 +48,9 @@ class ReLovedGoodies extends StatelessWidget {
             switch(settings.name) {
               case (Routes.createAdvertScreen) : {
                 return RouteWithoutTransition(builder:(_) => HomeScreen(CreateAdvertScreen()), settings: settings);
+              }
+              case (Routes.authScreen) : {
+                return RouteWithoutTransition(builder:(_) => AuthScreen(), settings: settings);
               }
               default: {return RouteWithoutTransition(builder:(_) => HomeScreen(CreateAdvertScreen()), settings: settings);}
             }

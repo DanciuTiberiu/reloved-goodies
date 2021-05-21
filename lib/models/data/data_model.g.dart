@@ -14,8 +14,12 @@ _$_InitialProductDataModel _$_$_InitialProductDataModelFromJson(
     usage: json['usage'] == null
         ? null
         : UsageModel.fromJson(json['usage'] as Map<String, dynamic>),
-    openDate: dateTimeFromTimestamp(json['openDate'] as Timestamp),
-    expirationDate: dateTimeFromTimestamp(json['expirationDate'] as Timestamp),
+    openDate: json['openDate'] == null
+        ? null
+        : DateTime.parse(json['openDate'] as String),
+    expirationDate: json['expirationDate'] == null
+        ? null
+        : DateTime.parse(json['expirationDate'] as String),
     price: json['price'] == null
         ? null
         : PriceModel.fromJson(json['price'] as Map<String, dynamic>),
@@ -28,7 +32,7 @@ Map<String, dynamic> _$_$_InitialProductDataModelToJson(
       'title': instance.title,
       'description': instance.description,
       'usage': instance.usage,
-      'openDate': dateTimeToTimestamp(instance.openDate),
-      'expirationDate': dateTimeToTimestamp(instance.expirationDate),
+      'openDate': instance.openDate?.toIso8601String(),
+      'expirationDate': instance.expirationDate?.toIso8601String(),
       'price': instance.price,
     };

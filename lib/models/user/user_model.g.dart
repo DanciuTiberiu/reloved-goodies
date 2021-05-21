@@ -15,7 +15,9 @@ _$_InitialUserModel _$_$_InitialUserModelFromJson(Map<String, dynamic> json) {
     reviewScore: json['reviewScore'] as String? ?? '',
     city: json['city'] as String? ?? '',
     photo: json['photo'] as String? ?? '',
-    birthday: dateTimeFromTimestamp(json['birthday'] as Timestamp),
+    birthday: json['birthday'] == null
+        ? null
+        : DateTime.parse(json['birthday'] as String),
   );
 }
 
@@ -26,5 +28,5 @@ Map<String, dynamic> _$_$_InitialUserModelToJson(
       'reviewScore': instance.reviewScore,
       'city': instance.city,
       'photo': instance.photo,
-      'birthday': dateTimeToTimestamp(instance.birthday),
+      'birthday': instance.birthday?.toIso8601String(),
     };
